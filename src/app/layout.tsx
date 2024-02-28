@@ -3,6 +3,10 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
+import {
+  BottomRightCircle,
+  TopLeftCircle,
+} from "@/components/BackgroundCircles";
 
 const mainFont = DM_Sans({
   subsets: ["latin"],
@@ -25,12 +29,15 @@ export default function RootLayout({
       <body
         className={cn(
           mainFont.className,
-          "antialiased  h-screen bg-slate-950 backdrop-blur-3xl text-white"
+          "antialiased  h-screen bg-slate-950 backdrop-blur-3xl text-white overflow-clip"
         )}
       >
         <Navbar />
 
         {children}
+
+        <BottomRightCircle />
+        <TopLeftCircle />
       </body>
     </html>
   );
