@@ -1,6 +1,6 @@
 "use client";
 
-import { SiInstagram, SiLinkedin, SiTwitter, SiYoutube } from "react-icons/si";
+import { SiInstagram, SiLinkedin, SiGithub } from "react-icons/si";
 import React, { Dispatch, ReactNode, SetStateAction, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
@@ -65,7 +65,7 @@ const NavLink = ({
       }}
       exit={{ opacity: 0, y: -8 }}
       href={href}
-      className="block text-5xl font-bold text-black transition-colors hover:text-black/50 md:text-8xl"
+      className="block text-7xl tracking-tighter  lg:text-8xl font-bold text-slate-900 transition-colors hover:text-slate-200 md:text-8xl"
     >
       {children}.
     </motion.a>
@@ -84,9 +84,9 @@ const Logo = () => {
       }}
       exit={{ opacity: 0, y: -12 }}
       href="#"
-      className="grid h-32 w-32 place-content-center rounded-br-xl rounded-tl-xl bg-black transition-colors hover:bg-black/60"
+      className="grid h-32 w-32 place-content-center rounded-br-xl rounded-tl-xl bg-slate-900 transition-colors hover:bg-slate-900/60"
     >
-      <h2 className="text-6xl font-black">ec.</h2>
+      <h2 className="text-6xl font-white font-bold tracking-tighter">ec.</h2>
     </motion.a>
   );
 };
@@ -105,30 +105,30 @@ const HamburgerButton = ({
         animate={active ? "open" : "closed"}
         variants={UNDERLAY_VARIANTS}
         style={{ top: 16, right: 16 }}
-        className="fixed z-10 rounded-xl bg-white"
+        className="fixed z-10 rounded-2xl bg-slate-700"
       />
 
       <motion.button
         initial={false}
         animate={active ? "open" : "closed"}
         onClick={() => setActive((pv) => !pv)}
-        className={`group fixed right-4 top-4 z-50 h-20 w-20 bg-white/0 transition-all hover:bg-white/20 ${
+        className={`group fixed right-4 top-4 z-50 h-20 w-20 bg-slate-900 transition-all hover:bg-slate-900/50 ${
           active ? "rounded-bl-xl rounded-tr-xl" : "rounded-xl"
         }`}
       >
         <motion.span
           variants={HAMBURGER_VARIANTS.top}
-          className="absolute block h-1 w-10 bg-black"
+          className="absolute block h-1 w-10 bg-white"
           style={{ y: "-50%", left: "50%", x: "-50%" }}
         />
         <motion.span
           variants={HAMBURGER_VARIANTS.middle}
-          className="absolute block h-1 w-10 bg-black"
+          className="absolute block h-1 w-10 bg-white"
           style={{ left: "50%", x: "-50%", top: "50%", y: "-50%" }}
         />
         <motion.span
           variants={HAMBURGER_VARIANTS.bottom}
-          className="absolute block h-1 w-5 bg-black"
+          className="absolute block h-1 w-5 bg-white"
           style={{ x: "-50%", y: "50%" }}
         />
       </motion.button>
@@ -157,7 +157,7 @@ const FooterCTAs = () => {
               }}
               exit={{ opacity: 0, y: -8 }}
             >
-              <l.Component className="text-xl text-black transition-colors hover:text-black/60" />
+              <l.Component className=" text-3xl text-slate-900 transition-colors hover:text-slate-200" />
             </motion.a>
           );
         })}
@@ -175,7 +175,7 @@ const FooterCTAs = () => {
           },
         }}
         exit={{ opacity: 0, y: 8 }}
-        className="absolute bottom-2 right-2 flex items-center gap-2 rounded-full bg-black px-3 py-3 text-4xl uppercase text-white transition-colors hover:bg-black/60 hover:text-white md:bottom-4 md:right-4 md:px-6 md:text-2xl"
+        className="absolute bottom-2 right-2 flex items-center gap-2 rounded-full bg-slate-900 px-3 py-3 text-4xl uppercase text-white transition-colors hover:bg-slate-900/60 hover:text-white md:bottom-4 md:right-4 md:px-6 md:text-2xl"
       >
         <span className="hidden md:block">contact us</span> <FiArrowRight />
       </motion.button>
@@ -204,7 +204,7 @@ const LINKS = [
 
 const SOCIAL_CTAS = [
   {
-    Component: SiTwitter,
+    Component: SiGithub,
     href: "#",
   },
   {
@@ -213,10 +213,6 @@ const SOCIAL_CTAS = [
   },
   {
     Component: SiLinkedin,
-    href: "#",
-  },
-  {
-    Component: SiYoutube,
     href: "#",
   },
 ];
