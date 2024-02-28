@@ -3,6 +3,9 @@
 import { motion } from "framer-motion";
 import { Separator } from "./ui/separator";
 import { AnimatedText } from "./ui/animated-text";
+import DottedButton from "./ui/dotted-button";
+import { SiGithub, SiLinkedin } from "react-icons/si";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -91,9 +94,32 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 150 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 6.5 }}
+          transition={{ duration: 1, delay: 6 }}
         >
           <Separator className="mt-3 mb-3 w-[200px]  lg:w-[250px]" />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 150 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 6.5 }}
+          className="flex items-center space-x-3"
+        >
+          <DottedButton className="mt-2 z-0">
+            <Link href="/about">View Resume/CV</Link>
+          </DottedButton>
+          <DottedButton className="mt-2 z-0">
+            <Link href="https://github.com/ethancreates" target="_blank">
+              <SiGithub className="text-2xl" />
+            </Link>
+          </DottedButton>
+          <DottedButton className="mt-2 z-0">
+            <Link
+              href="https://www.linkedin.com/in/ethancreates/"
+              target="_blank"
+            >
+              <SiLinkedin className="text-2xl" />
+            </Link>
+          </DottedButton>
         </motion.div>
       </div>
     </section>

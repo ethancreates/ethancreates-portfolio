@@ -136,7 +136,7 @@ const HamburgerButton = ({
   );
 };
 
-const FooterCTAs = () => {
+export const FooterCTAs = () => {
   return (
     <>
       <div className="absolute bottom-6 left-6 flex gap-4 md:flex-col">
@@ -145,6 +145,7 @@ const FooterCTAs = () => {
             <motion.a
               key={idx}
               href={l.href}
+              target="_blank"
               initial={{ opacity: 0, y: -8 }}
               animate={{
                 opacity: 1,
@@ -157,7 +158,7 @@ const FooterCTAs = () => {
               }}
               exit={{ opacity: 0, y: -8 }}
             >
-              <l.Component className=" text-3xl text-slate-900 transition-colors hover:text-slate-200" />
+              <l.Component className=" text-6xl text-slate-900 transition-colors hover:text-slate-200" />
             </motion.a>
           );
         })}
@@ -175,9 +176,9 @@ const FooterCTAs = () => {
           },
         }}
         exit={{ opacity: 0, y: 8 }}
-        className="absolute bottom-2 right-2 flex items-center gap-2 rounded-full bg-slate-900 px-3 py-3 text-4xl uppercase text-white transition-colors hover:bg-slate-900/60 hover:text-white md:bottom-4 md:right-4 md:px-6 md:text-2xl"
+        className="absolute bottom-6 right-2 flex items-center gap-2 rounded-full bg-slate-900 px-3 py-3 lg:text-4xl uppercase text-white transition-colors hover:bg-slate-900/60 hover:text-white md:bottom-4 md:right-4 md:px-6 md:text-2xl"
       >
-        <span className="hidden md:block">contact us</span> <FiArrowRight />
+        <span className="block">contact me.</span> <FiArrowRight />
       </motion.button>
     </>
   );
@@ -202,18 +203,14 @@ const LINKS = [
   },
 ];
 
-const SOCIAL_CTAS = [
+export const SOCIAL_CTAS = [
   {
     Component: SiGithub,
-    href: "#",
-  },
-  {
-    Component: SiInstagram,
-    href: "#",
+    href: "https://github.com/ethancreates",
   },
   {
     Component: SiLinkedin,
-    href: "#",
+    href: "https://www.linkedin.com/in/ethancreates/",
   },
 ];
 
