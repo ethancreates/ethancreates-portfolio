@@ -10,7 +10,7 @@ const AboutMePage = () => {
         <Separator />
         <button className="mt-3 flex items-center hover:bg-white/20 text-2xl tracking-tighter border p-3 rounded-2xl">
           <Link href="/">
-            <IoHome className="text-xl" />
+            <IoHome className="text-lg" />
           </Link>
         </button>
       </div>
