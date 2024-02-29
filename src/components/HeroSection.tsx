@@ -64,7 +64,7 @@ const HeroSection = () => {
         </motion.h1>
       </div>
       {/* right side */}
-      <div className="lg:basis-1/3 flex flex-col items-center  lg:items-end lg:justify-center mb-10">
+      <div className="lg:basis-1/3 flex flex-col items-center  lg:items-end lg:justify-center mb-10 max-sm:scale-90">
         <motion.h1
           initial={{ opacity: 0, y: 150 }}
           animate={{ opacity: 1, y: 0 }}
