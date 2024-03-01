@@ -134,7 +134,7 @@ const AboutMePage = () => {
               Skills
             </h2>
             <div className="flex flex-col lg:items-end items-center">
-              <SkillsSection />
+              <SkillsSection data={SkillsData} />
             </div>
           </div>
         </div>
@@ -145,7 +145,7 @@ const AboutMePage = () => {
 
 export default AboutMePage;
 
-export const SkillsData = [
+const SkillsData = [
   "HTML5",
   "CSS3",
   "JavaScript",
