@@ -2,6 +2,11 @@ import DottedButton from "@/components/ui/dotted-button";
 import Image from "next/image";
 import Link from "next/link";
 import ethanImg from "../../../public/ethan1x1hd.png";
+import { FaMeta } from "react-icons/fa6";
+import { SiScrimba } from "react-icons/si";
+import MetaCertImg from "../../../public/Screenshot 2024-03-01 at 4.50.35 PM.png";
+import ScrimbaCertImg from "../../../public/Screenshot 2024-03-01 at 5.02.27 PM.png";
+import SkillsSection from "@/components/SkillsSection";
 
 const AboutMePage = () => {
   return (
@@ -23,20 +28,22 @@ const AboutMePage = () => {
       <section className="flex flex-col-reverse md:flex-row w-full mt-10">
         {/* left side */}
         <div className="md:basis-2/3 flex flex-col lg:items-start items-center overflow-y-scroll no-scrollbar max-md:mt-16">
-          <h2 className="text-4xl lg:text-6xl font-bold w-fit tracking-tighter border-b border-dotted pb-2">
+          <h2 className="text-4xl lg:text-6xl font-bold w-fit tracking-tighter border-b border-dotted pb-4 lg:mt-10">
             Work Experience
           </h2>
           {WorkExperienceData.map((data, index) => (
             <div
-              className="flex flex-col mt-3 max-sm:mt-0 lg:text-2xl tracking-tighter border-b border-dotted pb-3 mb-3 max-md:text-pretty max-md:text-2xl max-md:w-[400px]"
+              className="flex flex-col mt-10 max-sm:mt-0 lg:text-2xl tracking-tighter border-b border-dotted pb-3 mb-3 max-md:text-pretty max-md:text-2xl max-md:w-[400px]"
               key="index"
             >
-              <h3 className="font-light text-white max-md:mt-4">{data.date}</h3>
+              <h3 className="font-light text-md text-white max-md:mt-4">
+                {data.date}
+              </h3>
               <h3 className="mt-2 font-bold">{data.position}</h3>
-              <h3 className="text-xl  text-slate-300 font-light">
+              <h3 className="text-xl  text-slate-300 font-light pb-1">
                 {data.company} - {data.location}
               </h3>
-              <h4 className="text-lg  max-sm:mt-5 text-slate-300 border-t border-dotted pt-2 mt-2 w-[550px] max-md:w-[400px]">
+              <h4 className="text-lg  max-sm:mt-5 text-slate-300 border-t border-dotted pt-4 mt-2 w-[550px] max-md:w-[400px]">
                 {data.description.first}
               </h4>
               <h4 className="text-lg  max-sm:mt-5 text-slate-300 mt-2 w-[550px] max-md:w-[400px]">
@@ -50,6 +57,7 @@ const AboutMePage = () => {
         </div>
         {/* right side */}
         <div className="md:basis-1/3 flex flex-col lg:items-end items-center h-fit">
+          {/* Name, General Details */}
           <div className="rounded-3xl bg-clip-padding border border-dotted transition-all hover:p-5 mb-4">
             <Image
               src={ethanImg}
@@ -67,6 +75,68 @@ const AboutMePage = () => {
             <h3>(+63)917-656-6479</h3>
             <h3>Manila, Phlippines</h3>
           </div>
+          {/* Certificates */}
+          <div className="text-right max-sm:text-center mt-3 text-lg tracking-tighter pt-2 max-sm:scale-90">
+            <h2 className="text-4xl font-bold tracking-tighter border-b border-dotted pb-2">
+              Certificates
+            </h2>
+            <div className="flex flex-col items-end max-sm:items-center">
+              <div className="flex text-white space-x-1 items-center mt-2">
+                <FaMeta />
+                <h3>Meta&apos;s Front-End Developer Professional Certficate</h3>
+              </div>
+              <div
+                className="
+              flex flex-col items-center"
+              >
+                <Image
+                  src={MetaCertImg}
+                  alt="Meta's Front-End Developer Professional Certficate"
+                  width={300}
+                  className="rounded-2xl p-2"
+                />
+                <DottedButton className="text-sm my-2">
+                  <Link
+                    href="/CourseraMetaFrontEndCert.pdf"
+                    target="_blank"
+                    download
+                  >
+                    Download/View Certificate
+                  </Link>
+                </DottedButton>
+              </div>
+              <div className="flex items-center  text-white space-x-1 mt-2">
+                <SiScrimba />
+                <h3>Scrimba&apos;s Frontend Developer Career Path</h3>
+              </div>
+              <div className="flex flex-col items-center">
+                <Image
+                  src={ScrimbaCertImg}
+                  alt="Scrimba's Frontend Developer Career Path"
+                  width={300}
+                  className="rounded-2xl p-2"
+                />
+                <DottedButton className="text-sm my-2">
+                  <Link
+                    href="/ScrimbaFrontEndCert.pdf"
+                    target="_blank"
+                    download
+                  >
+                    Download/View Certificate
+                  </Link>
+                </DottedButton>
+              </div>
+            </div>
+          </div>
+          {/* Skills */}
+          <div className="text-right max-sm:text-center mt-3 text-lg tracking-tigher pt-4">
+            <h2 className="text-4xl font-bold tracking-tighter border-b border-dotted pb-2">
+              Skills
+            </h2>
+            <div className="flex flex-col lg:items-end items-center">
+              <SkillsSection />
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -74,6 +144,31 @@ const AboutMePage = () => {
 };
 
 export default AboutMePage;
+
+export const SkillsData = [
+  "HTML5",
+  "CSS3",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Tailwind CSS",
+  "Framer Motion",
+  "Reach Hook Table",
+  "Shadcn UI",
+  "Node.js",
+  "Express",
+  "MongoDB",
+  "Mongoose",
+  "Kinde-Auth",
+  "Clerk-Auth",
+  "Supabase",
+  "Postgres",
+  "MySQL",
+  "Prisma",
+  "Drizzle",
+  "Payload",
+];
 
 const WorkExperienceData = [
   {

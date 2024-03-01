@@ -35,9 +35,6 @@ export default function RootLayout({
         <Navbar />
 
         {children}
-
-        <BottomRightCircle />
-        <TopLeftCircle />
       </body>
     </html>
   );
