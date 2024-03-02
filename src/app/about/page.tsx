@@ -33,7 +33,7 @@ const AboutMePage = () => {
           </h2>
           {WorkExperienceData.map((data, index) => (
             <div
-              className="flex flex-col mt-10 max-sm:mt-0 lg:text-2xl tracking-tighter border-b border-dotted pb-3 mb-3 max-md:text-pretty max-md:text-2xl max-md:w-[400px]"
+              className="flex flex-col mt-10 max-sm:scale-90  max-sm:mt-0 lg:text-2xl tracking-tighter border-b border-dotted pb-3 mb-3 max-md:text-pretty max-md:text-2xl max-md:w-[400px]"
               key="index"
             >
               <h3 className="font-light text-md text-white max-md:mt-4">

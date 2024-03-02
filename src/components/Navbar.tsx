@@ -158,7 +158,7 @@ export const FooterCTAs = () => {
               }}
               exit={{ opacity: 0, y: -8 }}
             >
-              <l.Component className=" text-6xl text-slate-900 transition-colors hover:text-slate-200" />
+              <l.Component className="text-4xl lg:text-6xl  text-slate-900 transition-colors hover:text-slate-200" />
             </motion.a>
           );
         })}
