@@ -139,7 +139,7 @@ const HamburgerButton = ({
 export const FooterCTAs = () => {
   return (
     <>
-      <div className="absolute bottom-6 left-6 flex gap-4 md:flex-col">
+      <div className="absolute bottom-6 left-6 flex gap-4">
         {SOCIAL_CTAS.map((l, idx) => {
           return (
             <motion.a
@@ -158,7 +158,7 @@ export const FooterCTAs = () => {
               }}
               exit={{ opacity: 0, y: -8 }}
             >
-              <l.Component className="text-4xl lg:text-6xl  text-slate-900 transition-colors hover:text-slate-200" />
+              <l.Component className="text-4xl lg:text-5xl  text-slate-900 transition-colors hover:text-slate-200" />
             </motion.a>
           );
         })}
