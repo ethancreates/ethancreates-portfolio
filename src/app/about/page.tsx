@@ -185,7 +185,7 @@ const WorkExperienceData = [
   {
     date: "2023 - Pending",
     position: "Full-Stack Web Developer",
-    company: "HLA Careers Phlippines",
+    company: "HLA Careers Philppines",
     location: "Manila, Phlippines",
     description: {
       first: `Designed and developed a job portal for a Chinese apparel brand, HLA. The website was initially built with Next.js, Tailwind CSS, Framer Motion, Reach-Hook-Table, and Shadcn-UI.`,
@@ -202,6 +202,17 @@ const WorkExperienceData = [
       first: `Wrote SEO-optimized content for No-BS Marketplace, an Australian-based digital marketing company that specializes in content writing, SEO, and domain authority.`,
       second: `The company placed me on the premium team, which is responsible for writing content for the company's highest paying clients.`,
       third: `I was able to write about a wide range of topics, including but not limited to, digital marketing, SEO, web development, and more. I was also able to write for clients in various industries, such as real estate, finance, and health and wellness.`,
+    },
+  },
+  {
+    date: "2021-2022",
+    position: "Amazon Account Manager",
+    company: "Northern Response International Ltd.",
+    location: "Toronto, Ontario, Canada (Remote)",
+    description: {
+      first: `I was tasked to manage the US, CA, and MX Amazon Accounts for Northern Response International Ltd., a Canadian-based company that specializes in direct response marketing.`,
+      second: `My duties included overseeing the Amazon accounts for the US, Canada, and Mexico. This involved auditing and adjusting over 160 product listings (SKUs) to ensure they were optimized and competitive. Part of my role also included enhancing existing product listings with better SEO and PPC keywords to improve visibility and sales.`,
+      third: `Given the large number of SKUs under my management, I was responsible for generating weekly reports for our clients. These reports provided insights into sales performance, product rankings, and overall account health, allowing our clients to make informed decisions about their product strategies on Amazon.`,
     },
   },
 ];
