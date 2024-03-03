@@ -12,6 +12,7 @@ const AboutMePage = () => {
   return (
     <main className="flex flex-col items-center p-10 max-w-screen-xl mx-auto">
       {/* top part */}
+
       <div className="flex flex-col items-center max-sm:hidden">
         <div className="flex space-x-3">
           <DottedButton>
@@ -101,7 +102,7 @@ const AboutMePage = () => {
                     target="_blank"
                     download
                   >
-                    Download/View Certificate
+                    View Certificate
                   </Link>
                 </DottedButton>
               </div>
@@ -122,7 +123,7 @@ const AboutMePage = () => {
                     target="_blank"
                     download
                   >
-                    Download/View Certificate
+                    View Certificate
                   </Link>
                 </DottedButton>
               </div>
