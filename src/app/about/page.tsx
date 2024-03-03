@@ -7,6 +7,7 @@ import { SiScrimba } from "react-icons/si";
 import MetaCertImg from "../../../public/Screenshot 2024-03-01 at 4.50.35 PM.png";
 import ScrimbaCertImg from "../../../public/Screenshot 2024-03-01 at 5.02.27 PM.png";
 import SkillsSection from "@/components/SkillsSection";
+import FrontEndSkillsSection from "@/components/SkillsSection";
 
 const AboutMePage = () => {
   return (
@@ -34,13 +35,15 @@ const AboutMePage = () => {
           </h2>
           {WorkExperienceData.map((data, index) => (
             <div
-              className="flex flex-col mt-10 w-[250px] max-sm:mt-0 lg:text-2xl tracking-tighter border-b border-dotted pb-3 mb-3"
+              className="flex flex-col mt-10 w-[250px] lg:w-[600px] max-sm:mt-0 lg:text-2xl tracking-tighter border-b border-dotted pb-3 mb-3"
               key="index"
             >
               <h3 className="font-light text-md text-white max-md:mt-4">
                 {data.date}
               </h3>
-              <h3 className="mt-2 text-lg font-bold">{data.position}</h3>
+              <h3 className="mt-2 text-lg font-bold lg:text-3xl">
+                {data.position}
+              </h3>
               <h3 className="text-md border-b pb-2 border-dotted   text-slate-300 font-light">
                 {data.company} - {data.location}
               </h3>
@@ -126,10 +129,34 @@ const AboutMePage = () => {
           {/* Skills */}
           <div className="text-right max-sm:text-center mt-3 text-lg tracking-tigher pt-4">
             <h2 className="text-4xl font-bold tracking-tighter border-b border-dotted pb-2">
-              Skills
+              Front-End Skills
             </h2>
             <div className="flex flex-col lg:items-end items-center">
-              <SkillsSection data={SkillsData} />
+              <SkillsSection data={frontEndSkills} />
+            </div>
+          </div>
+          <div className="text-right max-sm:text-center mt-3 text-lg tracking-tigher pt-4">
+            <h2 className="text-4xl font-bold tracking-tighter border-b border-dotted pb-2">
+              Back-End Skills
+            </h2>
+            <div className="flex flex-col lg:items-end items-center">
+              <SkillsSection data={backEndSkills} />
+            </div>
+          </div>
+          <div className="text-right max-sm:text-center mt-3 text-lg tracking-tigher pt-4">
+            <h2 className="text-4xl font-bold tracking-tighter border-b border-dotted pb-2">
+              UI/UX Skills
+            </h2>
+            <div className="flex flex-col lg:items-end items-center">
+              <SkillsSection data={UIUXSkills} />
+            </div>
+          </div>
+          <div className="text-right max-sm:text-center mt-3 text-lg tracking-tigher pt-4">
+            <h2 className="text-4xl font-bold tracking-tighter border-b border-dotted pb-2">
+              General Skills
+            </h2>
+            <div className="flex flex-col lg:items-end items-center">
+              <SkillsSection data={generalSkills} />
             </div>
           </div>
         </div>
@@ -163,6 +190,62 @@ const SkillsData = [
   "Prisma",
   "Drizzle",
   "Payload",
+];
+
+const frontEndSkills = [
+  "HTML5",
+  "CSS3",
+  "JavaScript",
+  "TypeScript",
+  "React.js",
+  "Next.js",
+  "Tailwind CSS",
+  "Framer Motion",
+  "Shadcn-UI",
+  "React Query/Tanstack Query",
+  "Tanstack Table",
+  "React Hook Form",
+  "Zod",
+];
+
+const backEndSkills = [
+  "Node.js",
+  "Express",
+  "MongoDB",
+  "Mongoose",
+  "Kinde-Auth",
+  "Clerk-Auth",
+  "Supabase",
+  "Postgres",
+  "MySQL",
+  "Prisma",
+  "Drizzle",
+  "Payload CMS",
+  "Thunder Client",
+  "Postman",
+  "tRPC",
+];
+
+const UIUXSkills = [
+  "Figma",
+  "Adobe Photoshop",
+  "Canva",
+  "Wireframing",
+  "Prototyping",
+  "User Research",
+  "User Flows",
+  "User Personas",
+  "Brand Identity",
+  "Typography",
+];
+
+const generalSkills = [
+  "Keyword Research",
+  "Content Writing",
+  "Amazon PPC/Ads",
+  "Search Engine Optimization",
+  "Time Management",
+  "Attention to Detail",
 ];
 
 const WorkExperienceData = [
