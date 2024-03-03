@@ -1,6 +1,14 @@
+import DottedButton from "@/components/ui/dotted-button";
+import Link from "next/link";
+
 const ProjectsPage = () => {
   return (
     <main className="px-5 max-w-screen-xl mx-auto pt-10 font-medium">
+      <div>
+        <DottedButton className="mb-10">
+          <Link href="/">Back To Home</Link>
+        </DottedButton>
+      </div>
       <div className="flex flex-col items-center text-center">
         <h1 className="text-7xl font-bold tracking-tighter border-b border-dotted pb-2">
           Projects

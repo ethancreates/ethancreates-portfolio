@@ -21,6 +21,8 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/use-toast";
+import DottedButton from "@/components/ui/dotted-button";
+import Link from "next/link";
 
 const ContactPage = () => {
   const FormSchema = z.object({
@@ -57,6 +59,9 @@ const ContactPage = () => {
   }
   return (
     <main className="px-5 max-w-screen-xl mx-auto pt-10 font-medium">
+      <DottedButton className="mb-10">
+        <Link href="/">Back To Home</Link>
+      </DottedButton>
       {/* Top Part */}
       <div className="flex flex-col items-start">
         <h1 className="text-7xl font-bold tracking-tighter border-b border-dotted pb-2">
@@ -71,7 +76,7 @@ const ContactPage = () => {
       {/* Form Part */}
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)}>
-          <div className="flex flex-col text-4xl text-pretty mt-10 tracking-tighter">
+          <div className="flex flex-col text-5xl text-pretty mt-10 tracking-tighter space-y-16">
             <h2 className="tracking-tighter">
               Hi there, <span className="italic">Ethan!</span>{" "}
             </h2>

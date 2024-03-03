@@ -12,24 +12,12 @@ import FrontEndSkillsSection from "@/components/SkillsSection";
 const AboutMePage = () => {
   return (
     <main className="flex flex-col items-center p-10 max-w-screen-xl mx-auto">
-      {/* top part */}
-
-      <div className="flex flex-col items-center max-sm:hidden">
-        <div className="flex space-x-3">
-          <DottedButton>
-            <Link href="/">Home</Link>
-          </DottedButton>
-          <DottedButton>
-            <Link href="/projects">Projects</Link>
-          </DottedButton>
-          <DottedButton>
-            <Link href="/contact">Contact</Link>
-          </DottedButton>
-        </div>
-      </div>
       <section className="flex flex-col-reverse md:flex-row w-full mt-10">
         {/* left side */}
         <div className="md:basis-2/3 flex flex-col lg:items-start items-center overflow-y-scroll no-scrollbar max-md:mt-16">
+          <DottedButton>
+            <Link href="/">Back To Home</Link>
+          </DottedButton>
           <h2 className="text-4xl lg:text-6xl font-bold w-fit tracking-tighter border-b border-dotted pb-4 lg:mt-10">
             Work Experience
           </h2>
@@ -56,7 +44,7 @@ const AboutMePage = () => {
         {/* right side */}
         <div className="md:basis-1/3 flex flex-col lg:items-end items-center h-fit">
           {/* Name, General Details */}
-          <div className="rounded-3xl bg-clip-padding border border-dotted transition-all hover:p-5 mb-4">
+          <div className="rounded-3xl bg-clip-padding border border-dotted transition-all p-5 mb-4">
             <Image
               src={ethanImg}
               alt="Ethan Gabriel Munoz's 1x1 Portrait"
@@ -69,8 +57,8 @@ const AboutMePage = () => {
           </h2>
           <div className="text-right max-sm:text-center mt-3 text-lg tracking-tighter">
             <h3>full-stack/front-end web developer</h3>
-            <h3>ethancreates@proton.me</h3>
             <h3>ethan@ethancreates.dev</h3>
+            <h3>ethancreates@proton.me</h3>
             <h3>(+63)917-656-6479</h3>
             <h3>Manila, Phlippines</h3>
           </div>
