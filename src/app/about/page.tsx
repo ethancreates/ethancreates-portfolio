@@ -38,18 +38,18 @@ const AboutMePage = () => {
               className="flex flex-col mt-10 w-[250px] lg:w-[600px] max-sm:mt-0 lg:text-2xl tracking-tighter border-b border-dotted pb-3 mb-3"
               key="index"
             >
-              <h3 className="font-light text-md text-white max-md:mt-4">
+              <h3 className="font-light text-md max-md:text-lg text-white max-md:mt-4">
                 {data.date}
               </h3>
-              <h3 className="mt-2 text-lg font-bold lg:text-3xl">
+              <h3 className="mt-2 mb-1 text-xl font-bold lg:text-3xl">
                 {data.position}
               </h3>
               <h3 className="text-md border-b pb-2 border-dotted   text-slate-300 font-light">
                 {data.company} - {data.location}
               </h3>
-              <h4 className="text-md mt-2">{data.description.first}</h4>
-              <h4 className="text-md mt-2">{data.description.second}</h4>
-              <h4 className="text-md mt-2">{data.description.third}</h4>
+              <h4 className="text-[18px] mt-2">{data.description.first}</h4>
+              <h4 className="text-[18px] mt-2">{data.description.second}</h4>
+              <h4 className="text-[18px] mt-2">{data.description.third}</h4>
             </div>
           ))}
         </div>
@@ -206,6 +206,9 @@ const frontEndSkills = [
   "Tanstack Table",
   "React Hook Form",
   "Zod",
+  "Wordpress/Elementor",
+  "Framer",
+  "Webflow",
 ];
 
 const backEndSkills = [
@@ -215,6 +218,7 @@ const backEndSkills = [
   "Mongoose",
   "Kinde-Auth",
   "Clerk-Auth",
+  "NextAuth.js",
   "Supabase",
   "Postgres",
   "MySQL",
@@ -224,6 +228,7 @@ const backEndSkills = [
   "Thunder Client",
   "Postman",
   "tRPC",
+  "PHP",
 ];
 
 const UIUXSkills = [
