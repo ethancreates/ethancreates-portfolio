@@ -70,6 +70,7 @@ const AboutMePage = () => {
           <div className="text-right max-sm:text-center mt-3 text-lg tracking-tighter">
             <h3>full-stack/front-end web developer</h3>
             <h3>ethancreates@proton.me</h3>
+            <h3>ethan@ethancreates.dev</h3>
             <h3>(+63)917-656-6479</h3>
             <h3>Manila, Phlippines</h3>
           </div>
