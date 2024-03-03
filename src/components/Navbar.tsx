@@ -66,7 +66,7 @@ const NavLink = ({
       }}
       exit={{ opacity: 0, y: -8 }}
       href={href}
-      className="block text-7xl tracking-tighter  lg:text-8xl font-bold text-slate-900 transition-colors hover:text-slate-200 md:text-8xl"
+      className="block text-6xl tracking-tighter  lg:text-8xl font-bold text-slate-900 transition-colors hover:text-slate-200 md:text-8xl"
     >
       {children}.
     </motion.a>
@@ -140,7 +140,7 @@ const HamburgerButton = ({
 export const FooterCTAs = () => {
   return (
     <>
-      <div className="absolute bottom-6 left-6 flex gap-4">
+      <div className="absolute bottom-6 right-6 flex gap-4">
         {SOCIAL_CTAS.map((l, idx) => {
           return (
             <motion.a
