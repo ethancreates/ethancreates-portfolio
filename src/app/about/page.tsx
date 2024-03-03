@@ -15,7 +15,7 @@ const AboutMePage = () => {
       <section className="flex flex-col-reverse md:flex-row w-full mt-10">
         {/* left side */}
         <div className="md:basis-2/3 flex flex-col lg:items-start items-center overflow-y-scroll no-scrollbar max-md:mt-16">
-          <DottedButton>
+          <DottedButton className="hidden lg:block">
             <Link href="/">Back To Home</Link>
           </DottedButton>
           <h2 className="text-4xl lg:text-6xl font-bold w-fit tracking-tighter border-b border-dotted pb-4 lg:mt-10">
