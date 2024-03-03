@@ -4,6 +4,7 @@ import { SiInstagram, SiLinkedin, SiGithub } from "react-icons/si";
 import React, { Dispatch, ReactNode, SetStateAction, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
+import Link from "next/link";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -163,23 +164,6 @@ export const FooterCTAs = () => {
           );
         })}
       </div>
-
-      <motion.button
-        initial={{ opacity: 0, y: 8 }}
-        animate={{
-          opacity: 1,
-          y: 0,
-          transition: {
-            delay: 1.125,
-            duration: 0.5,
-            ease: "easeInOut",
-          },
-        }}
-        exit={{ opacity: 0, y: 8 }}
-        className="absolute bottom-6 right-2 flex items-center gap-2 rounded-full bg-slate-900 px-3 py-3 lg:text-4xl uppercase text-white transition-colors hover:bg-slate-900/60 hover:text-white md:bottom-4 md:right-4 md:px-6 md:text-2xl"
-      >
-        <span className="block">contact me.</span> <FiArrowRight />
-      </motion.button>
     </>
   );
 };
@@ -200,6 +184,10 @@ const LINKS = [
   {
     title: "blogs",
     href: "/blogs",
+  },
+  {
+    title: "contact",
+    href: "/contact",
   },
 ];
 
