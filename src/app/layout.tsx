@@ -29,7 +29,7 @@ export default function RootLayout({
       <body
         className={cn(
           mainFont.className,
-          "antialiased  h-screen bg-slate-950 backdrop-blur-3xl text-white overflow-x-clip no-scrollbar"
+          "antialiased  h-screen bg-gradient-to-b from-slate-900 from-10% via-slate-950 via-50%  to-slate-900 to-100%  text-white overflow-x-clip no-scrollbar"
         )}
       >
         <Navbar />

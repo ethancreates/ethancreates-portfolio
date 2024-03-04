@@ -61,7 +61,7 @@ const ContactPage = () => {
     <main className="px-5 max-md:px-10  max-w-screen-xl mx-auto pt-10 font-medium">
       {/* Top Part */}
       <div className="flex flex-col items-start">
-        <DottedButton className="mt-10 mb-20">
+        <DottedButton className="mt-1 lg:mt-10 mb-20">
           <Link href="/">
             <p className="text-lg">Back to Home</p>
           </Link>
