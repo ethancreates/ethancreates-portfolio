@@ -58,13 +58,17 @@ const ContactPage = () => {
     });
   }
   return (
+<<<<<<< HEAD
     <main className="px-5 max-w-screen-xl mx-auto pt-10 font-medium">
       <DottedButton className="mb-10">
         <Link href="/">Back To Home</Link>
       </DottedButton>
+=======
+    <main className="px-5 max-md:px-10  max-w-screen-xl mx-auto pt-10 font-medium">
+>>>>>>> dc2b3ab (contact page now mobile responsive till iPhoneSE)
       {/* Top Part */}
       <div className="flex flex-col items-start">
-        <h1 className="text-7xl font-bold tracking-tighter border-b border-dotted pb-2">
+        <h1 className="text-6xl lg:text-7xl font-bold tracking-tighter border-b border-dotted pb-2">
           Contact
         </h1>
         <h2 className="text-xl mt-5 text-slate-400  tracking-tighter">
@@ -76,13 +80,18 @@ const ContactPage = () => {
       {/* Form Part */}
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)}>
+<<<<<<< HEAD
           <div className="flex flex-col text-5xl text-pretty mt-10 tracking-tighter space-y-16">
             <h2 className="tracking-tighter">
+=======
+          <div className="flex flex-col text-4xl text-pretty mt-20 tracking-tighter">
+            <h2 className="tracking-tighter text-4xl  lg:text-5xl">
+>>>>>>> dc2b3ab (contact page now mobile responsive till iPhoneSE)
               Hi there, <span className="italic">Ethan!</span>{" "}
             </h2>
             {/* Form-Taker's Name */}
             <div className="flex items-center mt-10">
-              <p className="mr-3">My name is</p>
+              <p className="mr-3 max-md:text-2xl">My name is</p>
               <FormField
                 control={form.control}
                 name="formName"
@@ -92,7 +101,7 @@ const ContactPage = () => {
                     <FormControl>
                       <Input
                         placeholder="Your Name*"
-                        className="bg-slate-950 text-3xl w-[400px]"
+                        className="bg-slate-950 text-3xl w-[200px]  lg:w-[400px]"
                         {...field}
                       />
                     </FormControl>
@@ -102,7 +111,7 @@ const ContactPage = () => {
             </div>
             {/* Form-Taker's Company */}
             <div className="flex items-center mt-5">
-              <p className="mr-3">& I am working at</p>
+              <p className="mr-3 max-md:text-2xl">& I am working at</p>
               <FormField
                 control={form.control}
                 name="formCompany"
@@ -112,7 +121,7 @@ const ContactPage = () => {
                     <FormControl>
                       <Input
                         placeholder="Your Team/Company's Name"
-                        className="bg-slate-950 text-3xl w-[500px]"
+                        className="bg-slate-950 text-lg  lg:text-3xl w-[200px]  lg:w-[500px]"
                         {...field}
                       />
                     </FormControl>
@@ -123,8 +132,10 @@ const ContactPage = () => {
               <span className="ml-2">,</span>
             </div>
             {/* Form-Taker's Service Chosen */}
-            <div className="flex items-center mt-5">
-              <p className="mr-3">I would like to inquire about your</p>
+            <div className="flex flex-col lg:flex-row space-y-3  items-center mt-5">
+              <p className="mr-3 max-md:text-2xl">
+                I would like to inquire about your
+              </p>
               <FormField
                 control={form.control}
                 name="formService"
@@ -136,7 +147,7 @@ const ContactPage = () => {
                     >
                       <FormMessage />
                       <FormControl>
-                        <SelectTrigger className="text-2xl px-5 h-[60px] mx-1">
+                        <SelectTrigger className="text-lg  lg:text-2xl px-5 h-[60px] mx-1">
                           <SelectValue placeholder="Web Development*" />
                         </SelectTrigger>
                       </FormControl>
@@ -149,7 +160,7 @@ const ContactPage = () => {
                         </SelectItem>
                         <SelectItem value="SEO Audit">SEO Audit</SelectItem>
                         <SelectItem value="SEO-Optimized Content Writing">
-                          SEO-Optimized Content Writing
+                          SEO Content Writing
                         </SelectItem>
                         <SelectItem value="Complete Package">
                           Complete Package
@@ -159,11 +170,11 @@ const ContactPage = () => {
                   </FormItem>
                 )}
               />
-              <span className="ml-3">services ,</span>
+              <span className="ml-3 max-md:text-2xl">services ,</span>
             </div>
             {/* Form-Taker's Service Chosen */}
-            <div className="flex items-center mt-5">
-              <p className="mr-3">I have a ready budget of</p>
+            <div className="flex flex-col lg:flex-row space-y-3 items-center mt-5">
+              <p className="mr-3 max-md:text-xl">I have a ready budget of</p>
               <FormField
                 control={form.control}
                 name="formBudget"
@@ -200,11 +211,11 @@ const ContactPage = () => {
                   </FormItem>
                 )}
               />
-              <span className="ml-3">USD.</span>
+              <span className="ml-3 max-md:text-2xl">USD.</span>
             </div>
             {/* Form-Taker's Additional Details */}
             <div className="flex flex-col items-start mt-14">
-              <p className="mr-3">Additional Details:</p>
+              <p className="mr-3 text-xl  lg:text-2xl">Additional Details:</p>
               <FormField
                 control={form.control}
                 name="formDescription"
@@ -214,7 +225,7 @@ const ContactPage = () => {
                     <FormControl>
                       <Textarea
                         placeholder="I would like you to create a responsive and modern website for my business! I want you to make it SEO-optimzed and I want it to be fast and secure. I want it to be a complete package!"
-                        className="p-5 bg-slate-950 text-2xl w-[1100px] rounded-2xl mt-5 max-sm:w-[500px] h-[150px]"
+                        className="px-8 py-3 bg-slate-950 text-sm  lg:text-xl w-[1100px] rounded-2xl mt-5 max-sm:w-[310px] h-[150px]"
                         {...field}
                       />
                     </FormControl>
@@ -224,7 +235,7 @@ const ContactPage = () => {
             </div>
             {/* Form-Taker's Email */}
             <div className="flex items-center mt-5 text-2xl">
-              <p className="mr-3">You can reach me at</p>
+              <p className="mr-3 max-md:text-[20px]">You can reach me at</p>
               <FormField
                 control={form.control}
                 name="formEmail"
@@ -234,7 +245,7 @@ const ContactPage = () => {
                     <FormControl>
                       <Input
                         placeholder="email123@mailprovider.com*"
-                        className="bg-slate-950 text-2xl w-[350px]"
+                        className="bg-slate-950 text-sm  lg:text-2xl w-[180px]  lg:w-[350px]"
                         {...field}
                       />
                     </FormControl>
@@ -246,7 +257,7 @@ const ContactPage = () => {
           {/* Submit Button */}
           <Button
             type="submit"
-            className="my-7 w-[1100px] max-sm:w-[500px] text-2xl py-10 rounded-2xl"
+            className="my-7 lg:w-[1100px] max-sm:w-[300px] text-2xl py-10 rounded-2xl"
           >
             Send Inquiry
           </Button>
