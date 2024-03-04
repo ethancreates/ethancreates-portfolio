@@ -58,16 +58,14 @@ const ContactPage = () => {
     });
   }
   return (
-<<<<<<< HEAD
-    <main className="px-5 max-w-screen-xl mx-auto pt-10 font-medium">
-      <DottedButton className="mb-10">
-        <Link href="/">Back To Home</Link>
-      </DottedButton>
-=======
     <main className="px-5 max-md:px-10  max-w-screen-xl mx-auto pt-10 font-medium">
->>>>>>> dc2b3ab (contact page now mobile responsive till iPhoneSE)
       {/* Top Part */}
       <div className="flex flex-col items-start">
+        <DottedButton className="mt-10 mb-20">
+          <Link href="/">
+            <p className="text-lg">Back to Home</p>
+          </Link>
+        </DottedButton>
         <h1 className="text-6xl lg:text-7xl font-bold tracking-tighter border-b border-dotted pb-2">
           Contact
         </h1>
@@ -80,13 +78,8 @@ const ContactPage = () => {
       {/* Form Part */}
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)}>
-<<<<<<< HEAD
-          <div className="flex flex-col text-5xl text-pretty mt-10 tracking-tighter space-y-16">
-            <h2 className="tracking-tighter">
-=======
           <div className="flex flex-col text-4xl text-pretty mt-20 tracking-tighter">
             <h2 className="tracking-tighter text-4xl  lg:text-5xl">
->>>>>>> dc2b3ab (contact page now mobile responsive till iPhoneSE)
               Hi there, <span className="italic">Ethan!</span>{" "}
             </h2>
             {/* Form-Taker's Name */}
@@ -101,7 +94,7 @@ const ContactPage = () => {
                     <FormControl>
                       <Input
                         placeholder="Your Name*"
-                        className="bg-slate-950 text-3xl w-[200px]  lg:w-[400px]"
+                        className="bg-slate-950 text-3xl w-[200px]  lg:w-[400px] border-b border-dotted"
                         {...field}
                       />
                     </FormControl>
@@ -121,7 +114,7 @@ const ContactPage = () => {
                     <FormControl>
                       <Input
                         placeholder="Your Team/Company's Name"
-                        className="bg-slate-950 text-lg  lg:text-3xl w-[200px]  lg:w-[500px]"
+                        className="bg-slate-950 text-lg  lg:text-3xl w-[200px]  lg:w-[500px] border-dotted border-b"
                         {...field}
                       />
                     </FormControl>
@@ -132,7 +125,7 @@ const ContactPage = () => {
               <span className="ml-2">,</span>
             </div>
             {/* Form-Taker's Service Chosen */}
-            <div className="flex flex-col lg:flex-row space-y-3  items-center mt-5">
+            <div className="flex flex-col lg:flex-row space-y-3 items-center   max-md:items-start mt-5">
               <p className="mr-3 max-md:text-2xl">
                 I would like to inquire about your
               </p>
@@ -147,7 +140,7 @@ const ContactPage = () => {
                     >
                       <FormMessage />
                       <FormControl>
-                        <SelectTrigger className="text-lg  lg:text-2xl px-5 h-[60px] mx-1">
+                        <SelectTrigger className="text-lg  lg:text-2xl px-5 h-[60px] mx-1 bg-slate-950 border border-dotted">
                           <SelectValue placeholder="Web Development*" />
                         </SelectTrigger>
                       </FormControl>
@@ -170,10 +163,10 @@ const ContactPage = () => {
                   </FormItem>
                 )}
               />
-              <span className="ml-3 max-md:text-2xl">services ,</span>
+              <span className="md:ml-3 max-md:text-2xl">services ,</span>
             </div>
             {/* Form-Taker's Service Chosen */}
-            <div className="flex flex-col lg:flex-row space-y-3 items-center mt-5">
+            <div className="flex flex-col lg:flex-row space-y-3 items-center  max-md:items-start mt-5">
               <p className="mr-3 max-md:text-xl">I have a ready budget of</p>
               <FormField
                 control={form.control}
@@ -186,7 +179,7 @@ const ContactPage = () => {
                       defaultValue={field.value}
                     >
                       <FormControl>
-                        <SelectTrigger className="text-2xl px-5 h-[60px] mx-1">
+                        <SelectTrigger className="text-2xl px-5 h-[60px] mx-1 border-dotted border bg-slate-950 ">
                           <SelectValue placeholder=" $1,200 - $1,500*" />
                         </SelectTrigger>
                       </FormControl>
@@ -211,7 +204,7 @@ const ContactPage = () => {
                   </FormItem>
                 )}
               />
-              <span className="ml-3 max-md:text-2xl">USD.</span>
+              <span className="md:ml-3 max-md:text-2xl">USD.</span>
             </div>
             {/* Form-Taker's Additional Details */}
             <div className="flex flex-col items-start mt-14">
@@ -225,7 +218,7 @@ const ContactPage = () => {
                     <FormControl>
                       <Textarea
                         placeholder="I would like you to create a responsive and modern website for my business! I want you to make it SEO-optimzed and I want it to be fast and secure. I want it to be a complete package!"
-                        className="px-8 py-3 bg-slate-950 text-sm  lg:text-xl w-[1100px] rounded-2xl mt-5 max-sm:w-[310px] h-[150px]"
+                        className="px-8 py-3 bg-slate-950 text-sm  lg:text-xl w-[1100px] rounded-2xl mt-5 max-md:w-full min-w-80  h-[150px] border-dotted"
                         {...field}
                       />
                     </FormControl>
@@ -257,7 +250,7 @@ const ContactPage = () => {
           {/* Submit Button */}
           <Button
             type="submit"
-            className="my-7 lg:w-[1100px] max-sm:w-[300px] text-2xl py-10 rounded-2xl"
+            className="my-12 lg:w-[1100px] max-sm:w-[300px] text-2xl py-10 rounded-2xl border border-dotted bg-scale-950 uppercase hover:text-slate-950 transition-all tracking-tighter hover:bg-gray-400"
           >
             Send Inquiry
           </Button>

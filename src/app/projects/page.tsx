@@ -5,7 +5,7 @@ const ProjectsPage = () => {
   return (
     <main className="px-5 max-w-screen-xl mx-auto pt-10 font-medium">
       <div>
-        <DottedButton className="mb-10">
+        <DottedButton className="md:flex hidden items-center  mb-10">
           <Link href="/">Back To Home</Link>
         </DottedButton>
       </div>
