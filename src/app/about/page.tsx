@@ -153,7 +153,11 @@ const AboutMePage = () => {
             </h2>
             <div className="flex flex-col lg:items-end items-center">
               <DottedButton className="mt-5">
-                <Link href="/ethancreates-resume.pdf" target="_blank" download>
+                <Link
+                  href="/ethancreates-resume-website.pdf"
+                  target="_blank"
+                  download
+                >
                   PDF Download
                 </Link>
               </DottedButton>
