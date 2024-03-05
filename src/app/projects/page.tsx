@@ -90,11 +90,9 @@ const ProjectsPage = () => {
               </Card>
             </CarouselItem>
             <CarouselItem>
-              <Card className="bg-slate-800 border-dashed border-2 px-8 py-5">
+              <Card className="bg-slate-800  border-2 px-8 py-5">
                 <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
-                  <h2 className="border-b-2 border-dashed pb-3">
-                    HLA Careers Philippines
-                  </h2>
+                  <h2 className="border-b-2  pb-3">HLA Careers Philippines</h2>
                 </CardHeader>
                 <CardContent className="flex items-center mt-5 space-x-10">
                   {/* Text */}
