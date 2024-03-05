@@ -147,6 +147,18 @@ const AboutMePage = () => {
               <SkillsSection data={generalSkills} />
             </div>
           </div>
+          <div className="text-right max-sm:text-center mt-3 text-lg tracking-tigher pt-4">
+            <h2 className="text-3xl font-bold tracking-tighter border-b border-dotted pb-2">
+              Need a copy of my resume?
+            </h2>
+            <div className="flex flex-col lg:items-end items-center">
+              <DottedButton className="mt-5">
+                <Link href="/ethancreates-resume.pdf" target="_blank" download>
+                  PDF Download
+                </Link>
+              </DottedButton>
+            </div>
+          </div>
         </div>
       </section>
     </main>
