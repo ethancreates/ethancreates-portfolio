@@ -37,9 +37,9 @@ const ProjectsPage = () => {
         <Carousel className="w-full h-full max-w-6xl  mt-20">
           <CarouselContent>
             <CarouselItem>
-              <Card className="bg-slate-800 border-dashed border-2 px-8 py-5">
+              <Card className="bg-slate-800 border-b border-2 px-8 py-5">
                 <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
-                  <h2 className="border-b-2 border-dashed pb-3">
+                  <h2 className="border-b-2 pb-3">
                     Lauren Demi&apos;s UI/UX Designer Portfolio
                   </h2>
                 </CardHeader>
