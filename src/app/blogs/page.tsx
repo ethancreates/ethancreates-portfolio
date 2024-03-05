@@ -14,8 +14,8 @@ const BlogsPage = () => {
 
       {/* Section */}
       <section className="flex flex-col items-start">
-        <div className="w-full bg-slate-800 h-[500px] mt-5 rounded-2xl">
-          <h2 className="ml-5 mt-10 text-4xl tracking-tighter">
+        <div className="w-full bg-slate-800 h-[500px] mt-5 rounded-2xl px-5">
+          <h2 className="ml-5 mt-10 text-5xl tracking-tighter text-center">
             Hi there! <br />
             <br /> The blogs section is still under development, please come
             back again!

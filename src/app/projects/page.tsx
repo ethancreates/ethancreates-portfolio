@@ -98,18 +98,21 @@ const ProjectsPage = () => {
                   {/* Text */}
                   <div className="flex flex-col space-y-5">
                     <p className="text-lg text-white">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Impedit.
+                      I spearheaded the development of a job board web
+                      application tailored for HLA, a leading Chinese clothing
+                      brand, with a strong emphasis on user-centric design for
+                      aspiring applicants. This involved incorporating essential
+                      features like a job board, application forms, tracker, and
+                      dashboard to optimize user experience.
                     </p>
                     <p className="text-lg text-white">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Voluptatum mollitia optio, repudiandae voluptatibus
-                      doloribus assumenda reiciendis blanditiis tempore vel
-                      pariatur?
+                      However, this is project is currently on hold by the
+                      company due to internal affairs, and I am to standby for
+                      further instructions.
                     </p>
                     <p className="text-lg text-white">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Vitae maxime, harum repellat ipsum pariatur consectetur?
+                      The project is built with Next.js, Tailwind CSS, Framer
+                      Motion, ResendAPI and TypeScript as well.
                     </p>
                   </div>
                   {/* Image */}
@@ -126,10 +129,12 @@ const ProjectsPage = () => {
                   <DottedButton className="bg-slate-800 text-sm ml-5">
                     <Link href="#">More Details</Link>
                   </DottedButton>
-                  <DottedButton className="bg-slate-800 text-sm ml-5">
+                  <DottedButton className="blur-sm text-sm ml-5 cursor-not-allowed">
                     <Link
-                      href="https://ph-hla-careers.vercel.app/"
+                      href="#"
                       target="_blank"
+                      aria-disabled
+                      className="cursor-not-allowed"
                     >
                       Live Link
                     </Link>

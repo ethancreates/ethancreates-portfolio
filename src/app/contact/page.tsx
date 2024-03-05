@@ -66,7 +66,7 @@ const ContactPage = () => {
             <p className="text-lg">Back to Home</p>
           </Link>
         </DottedButton>
-        <h1 className="text-6xl lg:text-7xl font-bold tracking-tighter border-b border-dotted pb-2">
+        <h1 className="text-6xl lg:text-7xl font-bold tracking-tighter border-b  pb-2">
           Contact
         </h1>
         <h2 className="text-xl mt-5 text-slate-400  tracking-tighter">
@@ -94,7 +94,7 @@ const ContactPage = () => {
                     <FormControl>
                       <Input
                         placeholder="Your Name*"
-                        className="bg-slate-950 text-3xl w-[200px]  lg:w-[400px] border-b border-dotted"
+                        className="bg-slate-950 text-3xl w-[200px]  lg:w-[400px] border-b "
                         {...field}
                       />
                     </FormControl>
@@ -114,7 +114,7 @@ const ContactPage = () => {
                     <FormControl>
                       <Input
                         placeholder="Your Team/Company's Name"
-                        className="bg-slate-950 text-lg  lg:text-3xl w-[200px]  lg:w-[500px] border-dotted border-b"
+                        className="bg-slate-950 text-lg  lg:text-3xl w-[200px]  lg:w-[500px]  border-b"
                         {...field}
                       />
                     </FormControl>
@@ -140,7 +140,7 @@ const ContactPage = () => {
                     >
                       <FormMessage />
                       <FormControl>
-                        <SelectTrigger className="text-lg  lg:text-2xl px-5 h-[60px] mx-1 bg-slate-950 border border-dotted">
+                        <SelectTrigger className="text-lg  lg:text-2xl px-5 h-[60px] mx-1 bg-slate-950 border ">
                           <SelectValue placeholder="Web Development*" />
                         </SelectTrigger>
                       </FormControl>
@@ -179,7 +179,7 @@ const ContactPage = () => {
                       defaultValue={field.value}
                     >
                       <FormControl>
-                        <SelectTrigger className="text-2xl px-5 h-[60px] mx-1 border-dotted border bg-slate-950 ">
+                        <SelectTrigger className="text-2xl px-5 h-[60px] mx-1  border bg-slate-950 ">
                           <SelectValue placeholder=" $1,200 - $1,500*" />
                         </SelectTrigger>
                       </FormControl>
@@ -218,7 +218,7 @@ const ContactPage = () => {
                     <FormControl>
                       <Textarea
                         placeholder="I would like you to create a responsive and modern website for my business! I want you to make it SEO-optimzed and I want it to be fast and secure. I want it to be a complete package!"
-                        className="px-8 py-3 bg-slate-950 text-sm  lg:text-xl w-[1100px] rounded-2xl mt-5 max-md:w-full min-w-80  h-[150px] border-dotted"
+                        className="px-8 py-3 bg-slate-950 text-sm  lg:text-xl w-[1100px] rounded-2xl mt-5 max-md:w-full min-w-80  h-[150px] "
                         {...field}
                       />
                     </FormControl>
@@ -250,7 +250,7 @@ const ContactPage = () => {
           {/* Submit Button */}
           <Button
             type="submit"
-            className="my-12 lg:w-[1100px] max-sm:w-[300px] text-2xl py-10 rounded-2xl border border-dotted bg-scale-950 uppercase hover:text-slate-950 transition-all tracking-tighter hover:bg-gray-400"
+            className="my-12 lg:w-[1100px] max-sm:w-[300px] text-2xl py-10 rounded-2xl border  bg-scale-950 uppercase hover:text-slate-950 transition-all tracking-tighter hover:bg-gray-400"
           >
             Send Inquiry
           </Button>

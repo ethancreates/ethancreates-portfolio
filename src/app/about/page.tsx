@@ -18,12 +18,12 @@ const AboutMePage = () => {
           <DottedButton className="hidden lg:block">
             <Link href="/">Back To Home</Link>
           </DottedButton>
-          <h2 className="text-4xl lg:text-6xl font-bold w-fit tracking-tighter border-b border-dotted pb-4 lg:mt-10">
+          <h2 className="text-4xl lg:text-6xl font-bold w-fit tracking-tighter border-b pb-4 lg:mt-10">
             Work Experience
           </h2>
           {WorkExperienceData.map((data, index) => (
             <div
-              className="flex flex-col mt-10 w-[250px] lg:w-[600px] max-sm:mt-0 lg:text-2xl tracking-tighter border-b border-dotted pb-3 mb-3"
+              className="flex flex-col mt-10 w-[250px] lg:w-[600px] max-sm:mt-0 lg:text-2xl tracking-tighter border-b  pb-3 mb-3"
               key="index"
             >
               <h3 className="font-light text-md max-md:text-lg text-white max-md:mt-4">
@@ -32,7 +32,7 @@ const AboutMePage = () => {
               <h3 className="mt-2 mb-1 text-xl font-bold lg:text-3xl">
                 {data.position}
               </h3>
-              <h3 className="text-md border-b pb-2 border-dotted   text-slate-300 font-light">
+              <h3 className="text-md border-b pb-2   text-slate-300 font-light">
                 {data.company} - {data.location}
               </h3>
               <h4 className="text-[18px] mt-2">{data.description.first}</h4>
@@ -44,7 +44,7 @@ const AboutMePage = () => {
         {/* right side */}
         <div className="md:basis-1/3 flex flex-col lg:items-end items-center h-fit">
           {/* Name, General Details */}
-          <div className="rounded-3xl bg-clip-padding border border-dotted transition-all p-5 mb-4">
+          <div className="rounded-3xl bg-clip-padding border  transition-all p-5 mb-4">
             <Image
               src={ethanImg}
               alt="Ethan Gabriel Munoz's 1x1 Portrait"
@@ -52,7 +52,7 @@ const AboutMePage = () => {
               className="rounded-2xl"
             />
           </div>
-          <h2 className="text-5xl pb-2 tracking-tighter font-bold text-right truncate border-b border-dotted max-md:text-4xl">
+          <h2 className="text-5xl pb-2 tracking-tighter font-bold text-right truncate border-b max-md:text-4xl">
             Ethan Gabriel Munoz
           </h2>
           <div className="text-right max-sm:text-center mt-3 text-lg tracking-tighter">
@@ -63,7 +63,7 @@ const AboutMePage = () => {
           </div>
           {/* Certificates */}
           <div className="text-right max-sm:text-center mt-3 text-lg tracking-tighter pt-2 max-sm:scale-90">
-            <h2 className="text-4xl font-bold tracking-tighter border-b border-dotted pb-2">
+            <h2 className="text-4xl font-bold tracking-tighter border-b  pb-2">
               Certificates
             </h2>
             <div className="flex flex-col items-end max-sm:items-center">
@@ -116,7 +116,7 @@ const AboutMePage = () => {
           </div>
           {/* Skills */}
           <div className="text-right max-sm:text-center mt-3 text-lg tracking-tigher pt-4">
-            <h2 className="text-4xl font-bold tracking-tighter border-b border-dotted pb-2">
+            <h2 className="text-4xl font-bold tracking-tighter border-b pb-2">
               Front-End Skills
             </h2>
             <div className="flex flex-col lg:items-end items-center">
@@ -124,7 +124,7 @@ const AboutMePage = () => {
             </div>
           </div>
           <div className="text-right max-sm:text-center mt-3 text-lg tracking-tigher pt-4">
-            <h2 className="text-4xl font-bold tracking-tighter border-b border-dotted pb-2">
+            <h2 className="text-4xl font-bold tracking-tighter border-b pb-2">
               Back-End Skills
             </h2>
             <div className="flex flex-col lg:items-end items-center">
@@ -132,7 +132,7 @@ const AboutMePage = () => {
             </div>
           </div>
           <div className="text-right max-sm:text-center mt-3 text-lg tracking-tigher pt-4">
-            <h2 className="text-4xl font-bold tracking-tighter border-b border-dotted pb-2">
+            <h2 className="text-4xl font-bold tracking-tighter border-b pb-2">
               UI/UX Skills
             </h2>
             <div className="flex flex-col lg:items-end items-center">
@@ -140,7 +140,7 @@ const AboutMePage = () => {
             </div>
           </div>
           <div className="text-right max-sm:text-center mt-3 text-lg tracking-tigher pt-4">
-            <h2 className="text-4xl font-bold tracking-tighter border-b border-dotted pb-2">
+            <h2 className="text-4xl font-bold tracking-tighter border-b pb-2">
               General Skills
             </h2>
             <div className="flex flex-col lg:items-end items-center">
@@ -148,7 +148,7 @@ const AboutMePage = () => {
             </div>
           </div>
           <div className="text-right max-sm:text-center mt-3 text-lg tracking-tigher pt-4">
-            <h2 className="text-3xl font-bold tracking-tighter border-b border-dotted pb-2">
+            <h2 className="text-3xl font-bold tracking-tighter border-b pb-2">
               Need a copy of my resume?
             </h2>
             <div className="flex flex-col lg:items-end items-center">
