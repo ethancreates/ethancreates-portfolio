@@ -78,10 +78,12 @@ const ProjectsPage = () => {
                   <DottedButton className="bg-slate-800 text-sm ml-5">
                     <Link href="#">More Details</Link>
                   </DottedButton>
-                  <DottedButton className="bg-slate-800 text-sm ml-5">
+                  <DottedButton className="blur-sm text-sm ml-5 cursor-not-allowed">
                     <Link
-                      href="https://laurendemidesign-portfolio.vercel.app/"
+                      href="#"
                       target="_blank"
+                      aria-disabled
+                      className="cursor-not-allowed"
                     >
                       Live Link
                     </Link>
