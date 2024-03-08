@@ -250,6 +250,7 @@ const ContactPage = () => {
           {/* Submit Button */}
           <Button
             type="submit"
+            disabled
             className="my-12 lg:w-[1100px] max-sm:w-[300px] text-2xl py-10 rounded-2xl border  bg-scale-950 uppercase hover:text-slate-950 transition-all tracking-tighter hover:bg-gray-400"
           >
             Send Inquiry
