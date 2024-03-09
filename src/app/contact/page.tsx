@@ -23,7 +23,6 @@ import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/use-toast";
 import DottedButton from "@/components/ui/dotted-button";
 import Link from "next/link";
-import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
 const ContactPage = () => {
@@ -49,9 +48,7 @@ const ContactPage = () => {
     resolver: zodResolver(FormSchema),
   });
 
-  function onSubmit(data: z.infer<typeof FormSchema>) {
-    contactFormAction();
-  }
+  function onSubmit(data: z.infer<typeof FormSchema>) {}
   return (
     <main className="px-5 max-md:px-10  max-w-screen-xl mx-auto pt-10 font-medium">
       {/* Top Part */}
