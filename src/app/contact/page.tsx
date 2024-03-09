@@ -23,6 +23,8 @@ import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/use-toast";
 import DottedButton from "@/components/ui/dotted-button";
 import Link from "next/link";
+import { Resend } from "resend";
+import { NextResponse } from "next/server";
 
 const ContactPage = () => {
   const FormSchema = z.object({
@@ -48,14 +50,7 @@ const ContactPage = () => {
   });
 
   function onSubmit(data: z.infer<typeof FormSchema>) {
-    toast({
-      title: "You submitted the following values:",
-      description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-        </pre>
-      ),
-    });
+    contactFormAction();
   }
   return (
     <main className="px-5 max-md:px-10  max-w-screen-xl mx-auto pt-10 font-medium">
@@ -248,13 +243,27 @@ const ContactPage = () => {
             </div>
           </div>
           {/* Submit Button */}
-          <Button
-            type="submit"
-            disabled
-            className="my-12 lg:w-[1100px] max-sm:w-[300px] text-2xl py-10 rounded-2xl border  bg-scale-950 uppercase hover:text-slate-950 transition-all tracking-tighter hover:bg-gray-400"
-          >
-            Send Inquiry
-          </Button>
+          <div className="flex flex-col items-center">
+            <Button
+              type="submit"
+              disabled
+              className="mt-10 mb-5 bg-gray-950 text-xl py-7 px-14 rounded-xl"
+            >
+              Send Inquiry
+            </Button>
+            <p>or</p>
+            <Button
+              asChild
+              className="mb-10 mt-5 bg-gray-950 text-xl py-7 px-14 rounded-xl"
+            >
+              <Link
+                href="https://calendly.com/ethancreates/discovery-call"
+                target="_blank"
+              >
+                Calendly Link
+              </Link>
+            </Button>
+          </div>
         </form>
       </Form>
     </main>
