@@ -64,12 +64,12 @@ const HeroSection = () => {
         </motion.h1>
       </div>
       {/* right side */}
-      <div className="lg:basis-1/3 flex flex-col items-center  lg:items-end lg:justify-center max-sm:mt-10 mb-10 max-sm:scale-90">
+      <div className="lg:basis-1/3 flex flex-col items-center  lg:items-end lg:justify-center max-sm:mt-10 mb-10 max-sm:scale-90 max-md:scale-90">
         <motion.h1
           initial={{ opacity: 0, y: 150 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 3 }}
-          className="mb-3 text-4xl lg:text-7xl font-bold text-white tracking-tighter"
+          className="mb-3 text-4xl lg:text-6xl font-bold text-white tracking-tighter"
         >
           ethancreates.
         </motion.h1>
@@ -86,7 +86,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 4 + index * 0.5 }}
             key={index}
-            className="lg:text-2xl my-1 font-extralight max-lg:text-center"
+            className="lg:text-xl my-1 font-extralight max-lg:text-center"
           >
             <h3 className="">{data.title}</h3>
           </motion.div>
