@@ -11,7 +11,7 @@ const HeroSection = () => {
   return (
     <section className="flex w-full h-screen lg:flex-row flex-col justify-between">
       {/* left side */}
-      <div className="lg:basis-2/3 flex flex-col items-center lg:justify-center text-3xl lg:text-7xl font-semibold mt-[100px]  lg:mt-10">
+      <div className="lg:basis-2/3 scale-90 flex flex-col items-center lg:justify-center text-3xl lg:text-7xl font-semibold mt-[100px]  lg:mt-10">
         <motion.h1
           initial={{ opacity: 0, y: 150 }}
           animate={{ opacity: 1, y: 0 }}
@@ -63,7 +63,7 @@ const HeroSection = () => {
         </motion.h1>
       </div>
       {/* right side */}
-      <div className="lg:basis-1/3 flex flex-col items-center  lg:items-end lg:justify-center max-sm:mt-10 mb-10 max-sm:scale-90 max-md:scale-90">
+      <div className="lg:basis-1/3 flex flex-col items-center  lg:items-end lg:justify-center max-sm:mt-10 mb-10 scale-75">
         <motion.h1
           initial={{ opacity: 0, y: 150 }}
           animate={{ opacity: 1, y: 0 }}
