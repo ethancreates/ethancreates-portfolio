@@ -45,11 +45,10 @@ const HeroSection = () => {
           <AnimatedText
             phrases={[
               "innovative",
-
+              "accessible",
               "responsive",
               "modern",
               "scalable",
-              "user-friendly",
               "secure",
             ]}
           />
