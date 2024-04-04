@@ -39,6 +39,61 @@ const ProjectsPage = () => {
         <Carousel className="w-full h-full max-w-6xl  mt-20">
           <CarouselContent>
             <CarouselItem>
+              <Card className="bg-slate-800  border-2 px-8 py-5">
+                <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
+                  <h2 className="border-b-2  pb-3">Article Pal</h2>
+                </CardHeader>
+                <CardContent className="flex items-center mt-5 space-x-10">
+                  {/* Text */}
+                  <div className="flex flex-col space-y-5">
+                    <p className="text-lg text-white">
+                      Article Pal is a personal SaaS project, designed and
+                      developed for writers that are having trouble to find the
+                      right words, sentences, or even paragraphs for their
+                      articles. As someone who wrote blog articles for more than
+                      a year, I found out that even the most seasoned writers
+                      still have writer&apos;s block.
+                    </p>
+                    <p className="text-lg text-white">
+                      That is precisely why I made Article Pal, an LLM-powered
+                      tool that helps writers build their article, from the
+                      outline and keywords, to producing the whole article. The
+                      writer just has to refine and edit the article written by
+                      Article Pal.
+                    </p>
+                    <p className="text-lg text-white">
+                      The project is being built with Next.js, Tailwind CSS,
+                      Framer Motion, MongoDB, Zod, React-Hook-Form, Kinde-Auth,
+                      Payload CMS and TypeScript as well.
+                    </p>
+                  </div>
+                  {/* Image */}
+                  <div>
+                    <Image
+                      src={ArticlePalImg}
+                      alt="Article Pal's Hero Section"
+                      className="rounded-2xl"
+                    />
+                  </div>
+                </CardContent>
+                <CardFooter className="text-white/70 flex items-center tracking-tighter text-xl justify-end">
+                  Want to learn more about my project?
+                  <DottedButton className="bg-slate-800 text-sm ml-5">
+                    <Link href="#">More Details</Link>
+                  </DottedButton>
+                  <DottedButton className="text-sm ml-5">
+                    <Link
+                      href="https://article-pal.vercel.app"
+                      target="_blank"
+                      className=""
+                    >
+                      Live Link
+                    </Link>
+                  </DottedButton>
+                </CardFooter>
+              </Card>
+            </CarouselItem>
+            <CarouselItem>
               <Card className="bg-slate-800 border-b border-2 px-8 py-5">
                 <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
                   <h2 className="border-b-2 pb-3">
@@ -124,62 +179,6 @@ const ProjectsPage = () => {
                     <Image
                       src={HLACareersImg}
                       alt="Lauren Demi's Portfolio Screenshot"
-                      className="rounded-2xl"
-                    />
-                  </div>
-                </CardContent>
-                <CardFooter className="text-white/70 flex items-center tracking-tighter text-xl justify-end">
-                  Want to learn more about my project?
-                  <DottedButton className="bg-slate-800 text-sm ml-5">
-                    <Link href="#">More Details</Link>
-                  </DottedButton>
-                  <DottedButton className="blur-sm text-sm ml-5 cursor-not-allowed">
-                    <Link
-                      href="#"
-                      target="_blank"
-                      aria-disabled
-                      className="cursor-not-allowed"
-                    >
-                      Live Link
-                    </Link>
-                  </DottedButton>
-                </CardFooter>
-              </Card>
-            </CarouselItem>
-            <CarouselItem>
-              <Card className="bg-slate-800  border-2 px-8 py-5">
-                <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
-                  <h2 className="border-b-2  pb-3">Article Pal</h2>
-                </CardHeader>
-                <CardContent className="flex items-center mt-5 space-x-10">
-                  {/* Text */}
-                  <div className="flex flex-col space-y-5">
-                    <p className="text-lg text-white">
-                      Article Pal is a personal SaaS project, designed and
-                      developed for writers that are having trouble to find the
-                      right words, sentences, or even paragraphs for their
-                      articles. As someone who wrote blog articles for more than
-                      a year, I found out that even the most seasoned writers
-                      still have writer&apos;s block.
-                    </p>
-                    <p className="text-lg text-white">
-                      That is precisely why I made Article Pal, an LLM-powered
-                      tool that helps writers build their article, from the
-                      outline and keywords, to producing the whole article. The
-                      writer just has to refine and edit the article written by
-                      Article Pal.
-                    </p>
-                    <p className="text-lg text-white">
-                      The project is being built with Next.js, Tailwind CSS,
-                      Framer Motion, MongoDB, Zod, React-Hook-Form, Kinde-Auth,
-                      Payload CMS and TypeScript as well.
-                    </p>
-                  </div>
-                  {/* Image */}
-                  <div>
-                    <Image
-                      src={ArticlePalImg}
-                      alt="Article Pal's Hero Section"
                       className="rounded-2xl"
                     />
                   </div>
