@@ -36,7 +36,7 @@ const ProjectsPage = () => {
 
       {/* Section */}
       <section className="flex flex-col items-center">
-        <Carousel className="w-full h-full max-w-6xl  mt-20">
+        <Carousel className="w-full h-full max-w-6xl  my-20 ">
           <CarouselContent>
             <CarouselItem>
               <Card className="bg-slate-800  border-2 px-8 py-5">
