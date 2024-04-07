@@ -43,7 +43,7 @@ const ProjectsPage = () => {
                 <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
                   <h2 className="border-b-2  pb-3">Article Pal</h2>
                 </CardHeader>
-                <CardContent className="flex items-center mt-5 space-x-10">
+                <CardContent className="flex md:flex-row flex-col items-center mt-5 space-x-10">
                   {/* Text */}
                   <div className="flex flex-col space-y-5">
                     <p className="text-lg text-white">
@@ -72,11 +72,11 @@ const ProjectsPage = () => {
                     <Image
                       src={ArticlePalImg}
                       alt="Article Pal's Hero Section"
-                      className="rounded-2xl"
+                      className="rounded-2xl mt-5 md:mt-0"
                     />
                   </div>
                 </CardContent>
-                <CardFooter className="text-white/70 flex items-center tracking-tighter text-xl justify-end">
+                <CardFooter className="text-white/70 flex flex-col md:flex-row md:space-y-0 space-y-5 items-center tracking-tighter text-xl justify-end">
                   Want to learn more about my project?
                   <DottedButton className="bg-slate-800 text-sm ml-5">
                     <Link href="#">More Details</Link>
@@ -100,7 +100,7 @@ const ProjectsPage = () => {
                     Lauren Demi&apos;s UI/UX Designer Portfolio
                   </h2>
                 </CardHeader>
-                <CardContent className="flex items-center mt-5 space-x-10">
+                <CardContent className="flex md:flex-row flex-col items-center mt-5 space-x-10">
                   {/* Text */}
                   <div className="flex flex-col space-y-5">
                     <p className="text-lg text-white">
@@ -126,11 +126,11 @@ const ProjectsPage = () => {
                     <Image
                       src={LaurenPortfolioImg}
                       alt="Lauren Demi's Portfolio Screenshot"
-                      className="rounded-2xl"
+                      className="rounded-2xl mt-5 md:mt-0"
                     />
                   </div>
                 </CardContent>
-                <CardFooter className="text-white/70 flex items-center tracking-tighter text-xl justify-end">
+                <CardFooter className="text-white/70 flex flex-col md:flex-row md:space-y-0 space-y-5 items-center tracking-tighter text-xl justify-end">
                   Want to learn more about my project?
                   <DottedButton className="bg-slate-800 text-sm ml-5">
                     <Link href="#">More Details</Link>
@@ -153,7 +153,7 @@ const ProjectsPage = () => {
                 <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
                   <h2 className="border-b-2  pb-3">HLA Careers Philippines</h2>
                 </CardHeader>
-                <CardContent className="flex items-center mt-5 space-x-10">
+                <CardContent className="flex flex-col md:flex-row items-center mt-5 space-x-10">
                   {/* Text */}
                   <div className="flex flex-col space-y-5">
                     <p className="text-lg text-white">
@@ -179,11 +179,11 @@ const ProjectsPage = () => {
                     <Image
                       src={HLACareersImg}
                       alt="Lauren Demi's Portfolio Screenshot"
-                      className="rounded-2xl"
+                      className="rounded-2xl mt-5 md:mt-0"
                     />
                   </div>
                 </CardContent>
-                <CardFooter className="text-white/70 flex items-center tracking-tighter text-xl justify-end">
+                <CardFooter className="text-white/70 flex flex-col md:flex-row space-y-5 md:space-y-0 items-center tracking-tighter text-xl justify-end">
                   Want to learn more about my project?
                   <DottedButton className="bg-slate-800 text-sm ml-5">
                     <Link href="#">More Details</Link>
