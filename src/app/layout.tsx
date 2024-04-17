@@ -3,12 +3,7 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
-import {
-  BottomRightCircle,
-  TopLeftCircle,
-} from "@/components/BackgroundCircles";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 
 const mainFont = DM_Sans({
   subsets: ["latin"],
@@ -31,14 +26,18 @@ export default function RootLayout({
       <body
         className={cn(
           mainFont.className,
-          "antialiased  h-screen bg-gradient-to-b from-slate-900 from-10% via-slate-950 via-50%  to-slate-900 to-100%  text-white overflow-x-clip no-scrollbar"
+          "antialiased  h-screen bg-gradient-to-b from-slate-900 from-10% via-slate-950 via-50%  to-slate-900 to-100%  text-white overflow-x-clip no-scrollbar",
         )}
       >
         <Navbar />
 
         {children}
-        <SpeedInsights />
-        <Analytics />
+
+        <Script
+          defer
+          src="https://umami.ethancreates.dev/script.js"
+          data-website-id="8a87c121-ad30-4873-9309-3f2381479d9c"
+        />
       </body>
     </html>
   );
