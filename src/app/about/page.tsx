@@ -4,10 +4,9 @@ import Link from "next/link";
 import ethanImg from "../../../public/ethan1x1hd.png";
 import { FaMeta } from "react-icons/fa6";
 import { SiScrimba } from "react-icons/si";
-import MetaCertImg from "../../../public/Screenshot 2024-03-01 at 4.50.35 PM.png";
+import MetaCertImg from "../../../public/CourseraMetaFrontEndCert-Image.png";
 import ScrimbaCertImg from "../../../public/Screenshot 2024-03-01 at 5.02.27 PM.png";
 import SkillsSection from "@/components/SkillsSection";
-import FrontEndSkillsSection from "@/components/SkillsSection";
 
 const AboutMePage = () => {
   return (
