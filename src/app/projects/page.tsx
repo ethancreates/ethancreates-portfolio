@@ -1,7 +1,7 @@
 import DottedButton from "@/components/ui/dotted-button";
 import Link from "next/link";
 import LaurenPortfolioImg from "../../../public/lauren-portfolio-img.jpeg";
-import HLACareersImg from "../../../public/hla-website-img.jpeg";
+import HLACareersImg from "../../../public/hla-careers.png";
 import ArticlePalImg from "../../../public/articlepal.jpeg";
 
 import {
@@ -178,7 +178,7 @@ const ProjectsPage = () => {
                   <div>
                     <Image
                       src={HLACareersImg}
-                      alt="Lauren Demi's Portfolio Screenshot"
+                      alt="HLA Career Image of its Hero Section"
                       className="rounded-2xl mt-5 md:mt-0"
                     />
                   </div>
@@ -190,10 +190,9 @@ const ProjectsPage = () => {
                   </DottedButton>
                   <DottedButton className="blur-sm text-sm ml-5 cursor-not-allowed">
                     <Link
-                      href="#"
+                      href="hla-careers.vercel.app"
                       target="_blank"
                       aria-disabled
-                      className="cursor-not-allowed"
                     >
                       Live Link
                     </Link>
