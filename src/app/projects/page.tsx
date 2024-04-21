@@ -189,7 +189,7 @@ const ProjectsPage = () => {
                     <Link href="#">More Details</Link>
                   </DottedButton>
                   <DottedButton className="text-sm ml-5 ">
-                    <Link href="hla-careers.vercel.app" target="_blank">
+                    <Link href="https://hla-careers.vercel.app" target="_blank">
                       Live Link
                     </Link>
                   </DottedButton>
