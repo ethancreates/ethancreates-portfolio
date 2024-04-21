@@ -188,12 +188,8 @@ const ProjectsPage = () => {
                   <DottedButton className="bg-slate-800 text-sm ml-5">
                     <Link href="#">More Details</Link>
                   </DottedButton>
-                  <DottedButton className="blur-sm text-sm ml-5 cursor-not-allowed">
-                    <Link
-                      href="hla-careers.vercel.app"
-                      target="_blank"
-                      aria-disabled
-                    >
+                  <DottedButton className="text-sm ml-5 ">
+                    <Link href="hla-careers.vercel.app" target="_blank">
                       Live Link
                     </Link>
                   </DottedButton>
