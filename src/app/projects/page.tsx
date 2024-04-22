@@ -39,9 +39,20 @@ const ProjectsPage = () => {
         <Carousel className="w-full h-full max-w-6xl  my-20 ">
           <CarouselContent>
             <CarouselItem>
-              <Card className="bg-slate-800  border-2 px-8 py-5">
+              <Card className="bg-slate-800  border-2 px-8 py-5 md:h-[600px]">
                 <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
-                  <h2 className="border-b-2  pb-3">Article Pal</h2>
+                  <div className="flex justify-between border-b-2 pb-3">
+                    <h2>Article Pal - SaaS Personal Project</h2>
+                    <DottedButton className="text-lg">
+                      <Link
+                        href="https://article-pal.vercel.app"
+                        target="_blank"
+                        className=""
+                      >
+                        Live Link
+                      </Link>
+                    </DottedButton>
+                  </div>
                 </CardHeader>
                 <CardContent className="flex md:flex-row flex-col items-center mt-5 space-x-10">
                   {/* Text */}
@@ -76,29 +87,23 @@ const ProjectsPage = () => {
                     />
                   </div>
                 </CardContent>
-                <CardFooter className="text-white/70 flex flex-col md:flex-row md:space-y-0 space-y-5 items-center tracking-tighter text-xl justify-end">
-                  Want to learn more about my project?
-                  <DottedButton className="bg-slate-800 text-sm ml-5">
-                    <Link href="#">More Details</Link>
-                  </DottedButton>
-                  <DottedButton className="text-sm ml-5">
-                    <Link
-                      href="https://article-pal.vercel.app"
-                      target="_blank"
-                      className=""
-                    >
-                      Live Link
-                    </Link>
-                  </DottedButton>
-                </CardFooter>
               </Card>
             </CarouselItem>
             <CarouselItem>
-              <Card className="bg-slate-800 border-b border-2 px-8 py-5">
+              <Card className="bg-slate-800 border-b md:h-[600px] border-2 px-8 py-5">
                 <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
-                  <h2 className="border-b-2 pb-3">
-                    Lauren Demi&apos;s UI/UX Designer Portfolio
-                  </h2>
+                  <div className="flex justify-between border-b-2 pb-3">
+                    <h2>Lauren Demi&apos;s UI/UX Designer - Portfolio</h2>
+                    <DottedButton className="text-lg">
+                      <Link
+                        href="https://laurendemidesign-portfolio.vercel.app"
+                        target="_blank"
+                        className=""
+                      >
+                        Live Link
+                      </Link>
+                    </DottedButton>
+                  </div>
                 </CardHeader>
                 <CardContent className="flex md:flex-row flex-col items-center mt-5 space-x-10">
                   {/* Text */}
@@ -130,28 +135,23 @@ const ProjectsPage = () => {
                     />
                   </div>
                 </CardContent>
-                <CardFooter className="text-white/70 flex flex-col md:flex-row md:space-y-0 space-y-5 items-center tracking-tighter text-xl justify-end">
-                  Want to learn more about my project?
-                  <DottedButton className="bg-slate-800 text-sm ml-5">
-                    <Link href="#">More Details</Link>
-                  </DottedButton>
-                  <DottedButton className="blur-sm text-sm ml-5 cursor-not-allowed">
-                    <Link
-                      href="#"
-                      target="_blank"
-                      aria-disabled
-                      className="cursor-not-allowed"
-                    >
-                      Live Link
-                    </Link>
-                  </DottedButton>
-                </CardFooter>
               </Card>
             </CarouselItem>
             <CarouselItem>
-              <Card className="bg-slate-800  border-2 px-8 py-5">
+              <Card className="bg-slate-800  border-2 px-8 py-5 md:h-[600px]">
                 <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
-                  <h2 className="border-b-2  pb-3">HLA Careers Philippines</h2>
+                  <div className="flex justify-between border-b-2 pb-3">
+                    <h2>HLA Careers Philippines - Job Portal</h2>
+                    <DottedButton className="text-lg">
+                      <Link
+                        href="https://hla-careers.vercel.app"
+                        target="_blank"
+                        className=""
+                      >
+                        Live Link
+                      </Link>
+                    </DottedButton>
+                  </div>
                 </CardHeader>
                 <CardContent className="flex flex-col md:flex-row items-center mt-5 space-x-10">
                   {/* Text */}
@@ -165,13 +165,17 @@ const ProjectsPage = () => {
                       dashboard to optimize user experience.
                     </p>
                     <p className="text-lg text-white">
-                      However, this is project is currently on hold by the
-                      company due to internal affairs, and I am to standby for
-                      further instructions.
+                      However, this project is currently on hold by the company
+                      due to internal affairs. The project was stopped around
+                      front-end and UI/UX Design phase. That said, I took the
+                      initiative to at least put the project in a functioning
+                      state where an authorized or registered user can post a
+                      job, and an admin can accept or reject the job listing.
                     </p>
                     <p className="text-lg text-white">
                       The project is built with Next.js, Tailwind CSS, Framer
-                      Motion, ResendAPI and TypeScript as well.
+                      Motion, Vercel Postgres, Vercel Blob, and TypeScript as
+                      well.
                     </p>
                   </div>
                   {/* Image */}
@@ -183,17 +187,6 @@ const ProjectsPage = () => {
                     />
                   </div>
                 </CardContent>
-                <CardFooter className="text-white/70 flex flex-col md:flex-row space-y-5 md:space-y-0 items-center tracking-tighter text-xl justify-end">
-                  Want to learn more about my project?
-                  <DottedButton className="bg-slate-800 text-sm ml-5">
-                    <Link href="#">More Details</Link>
-                  </DottedButton>
-                  <DottedButton className="text-sm ml-5 ">
-                    <Link href="https://hla-careers.vercel.app" target="_blank">
-                      Live Link
-                    </Link>
-                  </DottedButton>
-                </CardFooter>
               </Card>
             </CarouselItem>
           </CarouselContent>
