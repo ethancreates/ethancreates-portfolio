@@ -1,0 +1,53 @@
+{
+  "id": "bf43c7c1-e185-40ad-a4d1-61c566cd868f",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "version": "5",
+  "dialect": "pg",
+  "tables": {
+    "user": {
+      "name": "user",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "gen_random_uuid()"
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "UserRoles": {
+          "name": "UserRoles",
+          "type": "UserRoles",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'BASIC'"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {
+    "UserRoles": {
+      "name": "UserRoles",
+      "values": {
+        "ADMIN": "ADMIN",
+        "BASIC": "BASIC"
+      }
+    }
+  },
+  "schemas": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
