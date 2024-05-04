@@ -305,7 +305,7 @@ const WorkExperienceData = [
     date: "March 2020 - April 2021",
     position: "Amazon Account Manager & Team Leader",
     company: "Ovente",
-    location: "Vernon, CA, USA",
+    location: "Vernon, CA, USA (Remote)",
     description: {
       first: `Started my career remotely, I was tasked to manage the top 50 SKUs of two categories in our product lineup. I was also in-charge of two team members to help me cater to all SKUs and improve organic rankings through Listing Optimization, Keyword Research and proper planning for possible promotions.`,
       second: `Speaking of promotions, I was also managing the PPC for these SKUs and improve the overall ranking of the product by targeting well thought-out keywords.`,
