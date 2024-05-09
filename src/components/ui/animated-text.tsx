@@ -3,13 +3,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
+const ONE_SECOND = 1000;
+const WAIT_TIME = ONE_SECOND * 2;
+const STAGGER = 0.025;
+
 export const AnimatedText = ({ phrases }: { phrases: string[] }) => {
   const countRef = useRef(0);
   const [active, setActive] = useState(0);
-
-  const ONE_SECOND = 1000;
-  const WAIT_TIME = ONE_SECOND * 2;
-  const STAGGER = 0.025;
 
   useEffect(() => {
     const intervalRef = setInterval(() => {
