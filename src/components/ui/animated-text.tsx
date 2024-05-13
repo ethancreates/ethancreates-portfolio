@@ -10,6 +10,21 @@ const STAGGER = 0.025;
 export const AnimatedText = ({ phrases }: { phrases: string[] }) => {
   const countRef = useRef(0);
   const [active, setActive] = useState(0);
+  const [key, setKey] = useState(0); // Add a key state
+
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "visible") {
+        // Force remount by updating the key
+        setKey((prevKey) => prevKey + 1);
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, []);
 
   useEffect(() => {
     const intervalRef = setInterval(() => {
@@ -21,7 +36,7 @@ export const AnimatedText = ({ phrases }: { phrases: string[] }) => {
 
   return (
     <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 md:gap-2.5 lg:gap-4">
-      <AnimatePresence mode="popLayout">
+      <AnimatePresence mode="popLayout" key={key}>
         {phrases[active].split(" ").map((word, wordIndex) => {
           if (wordIndex === 0) {
             countRef.current = 0;
