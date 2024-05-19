@@ -35,8 +35,8 @@ export default function RootLayout({
 
         <Script
           defer
-          data-domain="ethancreates.dev"
-          src="https://plausible-analytics-production-4664.up.railway.app/js/script.js"
+          src="https://umami.ethancreates.dev/script.js"
+          data-website-id="42919388-8512-46ef-875c-0fe2d4217ebb"
         />
       </body>
     </html>
