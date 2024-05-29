@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Script from "next/script";
+import {Toaster } from "@/components/ui/toaster"
 
 const mainFont = DM_Sans({
   subsets: ["latin"],
@@ -38,6 +39,9 @@ export default function RootLayout({
           src="https://cloud.umami.is/script.js"
           data-website-id="710c55f4-a6bd-40ec-b216-df397e77adb1"
         />
+
+        <Toaster  />
+
       </body>
     </html>
   );

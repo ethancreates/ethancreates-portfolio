@@ -20,16 +20,16 @@ import { Textarea } from "@/components/ui/textarea";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "@/components/ui/input";
-import { toast } from "@/components/ui/use-toast";
 import DottedButton from "@/components/ui/dotted-button";
 import Link from "next/link";
-import { NextResponse } from "next/server";
+import { useToast } from "@/components/ui/use-toast";
 
 const ContactPage = () => {
+  const { toast } = useToast();
   const FormSchema = z.object({
     formName: z.string().min(1, "Name is required"),
     formCompany: z.optional(
-      z.string().min(1, "Please input the whole company name")
+      z.string().min(1, "Please input the whole company name"),
     ),
     formService: z.string().min(2, "Service is required"),
     formBudget: z.string().min(2, "Budget is required"),
@@ -38,8 +38,8 @@ const ContactPage = () => {
         .string()
         .min(
           5,
-          "Minimum characters for the description is 5, so please provide more details"
-        )
+          "Minimum characters for the description is 5, so please provide more details",
+        ),
     ),
     formEmail: z.string().email("Please input a valid email"),
   });
@@ -48,7 +48,12 @@ const ContactPage = () => {
     resolver: zodResolver(FormSchema),
   });
 
-  function onSubmit(data: z.infer<typeof FormSchema>) {}
+  function onSubmit(data: z.infer<typeof FormSchema>) {
+    toast({
+      title: `${data.formName} has sent an outreach to ethancreates!`,
+      description: `You will be reached via your email ${data.formEmail}`,
+    });
+  }
   return (
     <main className="px-5 max-md:px-10  max-w-screen-xl mx-auto pt-10 font-medium">
       {/* Top Part */}
@@ -132,8 +137,8 @@ const ContactPage = () => {
                     >
                       <FormMessage />
                       <FormControl>
-                        <SelectTrigger className="text-lg  lg:text-2xl px-5 h-[60px] mx-1 bg-slate-950 border ">
-                          <SelectValue placeholder="Web Development*" />
+                        <SelectTrigger className="text-lg placeholder:text-white/50 lg:text-2xl px-5 h-[60px] mx-1 bg-slate-950 border ">
+                          <SelectValue  placeholder="Web Development*"  />
                         </SelectTrigger>
                       </FormControl>
                       <SelectContent>
@@ -243,7 +248,6 @@ const ContactPage = () => {
           <div className="flex flex-col items-center">
             <Button
               type="submit"
-              disabled
               className="mt-10 mb-5 bg-gray-950 text-xl py-7 px-14 rounded-xl"
             >
               Send Inquiry
