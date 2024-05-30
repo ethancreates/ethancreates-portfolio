@@ -38,7 +38,9 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
               `Thank you, ${senderName} for reaching out to ethancreates.`
             </Heading>
             <Text>Please do wait for Ethan to reach out to you!</Text>
-            <Text>While waiting here's a recap of what you've sent us!</Text>
+            <Text>
+              While waiting here&apos;s a recap of what you&apos;ve sent us!
+            </Text>
             <Heading>Your Answers:</Heading>
             <Text>
               Your Email: ${senderEmail}

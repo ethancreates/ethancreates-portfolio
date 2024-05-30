@@ -13,11 +13,11 @@ const ContactPage = () => {
         </MainButton>
         <h1 className="text-6xl font-bold tracking-tighter mt-5">Contact Me</h1>
         <p className="text-slate-400 text-[17px] tracking-tighter ml-1 mt-2">
-          Let's start building your website the right way. <br /> Whether you
-          have a clear vision or need some guidance, I'm here to help bring your
-          ideas to life. <br /> Fill out the form below or reach out directly
-          via <a href="hello@ethancreates.dev">email</a>. I look forward to
-          collaborating with you!
+          Let&apos;s start building your website the right way. <br /> Whether
+          you have a clear vision or need some guidance, I&apos;m here to help
+          bring your ideas to life. <br /> Fill out the form below or reach out
+          directly via <a href="hello@ethancreates.dev">email</a>. I look
+          forward to collaborating with you!
         </p>
         <ContactForm />
       </main>
