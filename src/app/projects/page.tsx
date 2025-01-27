@@ -141,7 +141,7 @@ const ProjectsPage = () => {
               <Card className="bg-slate-800  border-2 px-8 py-5 md:h-[600px]">
                 <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
                   <div className="flex justify-between border-b-2 pb-3">
-                    <h2>HLA Careers Philippines - Job Portal</h2>
+                    <h2>Job Portal</h2>
                     <DottedButton className="text-lg">
                       <Link
                         href="https://hla-careers.vercel.app"
@@ -158,7 +158,7 @@ const ProjectsPage = () => {
                   <div className="flex flex-col space-y-5">
                     <p className="text-lg text-white">
                       I spearheaded the development of a job board web
-                      application tailored for HLA, a leading Chinese clothing
+                      application tailored for a leading Chinese clothing
                       brand, with a strong emphasis on user-centric design for
                       aspiring applicants. This involved incorporating essential
                       features like a job board, application forms, tracker, and

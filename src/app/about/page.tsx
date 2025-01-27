@@ -258,7 +258,7 @@ const generalSkills = [
 
 const WorkExperienceData = [
   {
-    date: "Februar 2024 - Present",
+    date: "February 2024 - September 2024",
     position: "Full-Stack Web Developer & UI/UX Designer",
     company: "Lauren Demi Design",
     location: "Boston, MA (Remote)",
@@ -271,7 +271,7 @@ const WorkExperienceData = [
   {
     date: "November 2023 - January 2024",
     position: "Front End Web Developer",
-    company: "HLA Careers Philppines",
+    company: "Anonymous Client - Job Portal",
     location: "Manila, Phlippines",
     description: {
       first: `I was referred by a friend to their team to help them design and build their Job Portal, this was a part-time position. I coordinated with them when working on the design via Figma first, and build the front-end soon after. I was able to do so, by utilizing one of the industry standard React framework, Next.js. Coupled with Tailwind CSS for styling, Framer Motion for animations, React-Hook-Table&Form, & lastly Shadcn-UI as an unstyled component library.`,
