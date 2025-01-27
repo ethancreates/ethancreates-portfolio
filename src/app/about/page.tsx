@@ -258,20 +258,20 @@ const generalSkills = [
 
 const WorkExperienceData = [
   {
-    date: "February 2024 - September 2024",
+    date: "Februar 2024 - Present",
     position: "Full-Stack Web Developer & UI/UX Designer",
     company: "Lauren Demi Design",
     location: "Boston, MA (Remote)",
     description: {
-      first: `I was reached out by her assistant via LinkedIn, initially I was hired to convert her Framer website to be more mobile responsive, however after 2 days, she had a dispute issue with Framer and asked me if I can just build it via code, which I confidently said yes.`,
-      second: `I built her UI/UX Designer portfolio with Next.js, React, Tailwind CSS, Framer Motion, Shadcn-UI and Resend API. We went with Next.js because of the performance and how easy the DX is to improve the SEO of all of her pages.`,
-      third: `Currently the website is 90% done, only reason why it's still on going is because there are 2 case studies missing to complete the site, but she has taken a small hiatus from it due to having the need to move from Puerto Rico, back to the US. Once she's finished with the case studies and sends me the data, the site and project should be finished after a weekend or two.`,
+      first: `The client's assistant first reached out to me on LinkedIn with a request to improve the mobile responsiveness of her Framer website. However, after just two days, she encountered a dispute with Framer and asked if I could rebuild the entire site using code instead. Confident in my skills, I agreed and took on the challenge.`,
+      second: `I developed her UI/UX designer portfolio using Next.js, React, Tailwind CSS, Framer Motion, Shadcn-UI, and the Resend API. We chose Next.js for its exceptional performance, developer-friendly experience (DX), and its ability to enhance SEO across all pages. The result is a modern, fast, and visually appealing portfolio that effectively showcases her design work.`,
+    third: ` `,
     },
   },
   {
     date: "November 2023 - January 2024",
     position: "Front End Web Developer",
-    company: "Anonymous Client - Job Portal",
+    company: "Chinese Company",
     location: "Manila, Phlippines",
     description: {
       first: `I was referred by a friend to their team to help them design and build their Job Portal, this was a part-time position. I coordinated with them when working on the design via Figma first, and build the front-end soon after. I was able to do so, by utilizing one of the industry standard React framework, Next.js. Coupled with Tailwind CSS for styling, Framer Motion for animations, React-Hook-Table&Form, & lastly Shadcn-UI as an unstyled component library.`,
