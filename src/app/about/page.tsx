@@ -147,13 +147,21 @@ const AboutMePage = () => {
             </div>
           </div>
           <div className="text-right max-sm:text-center mt-3 text-lg tracking-tigher pt-4">
+            <h2 className="text-2xl font-bold tracking-tighter border-b pb-2">
+              What I&apos;m Currently Aiming to Learn
+            </h2>
+            <div className="flex flex-col lg:items-end items-center">
+              <SkillsSection data={LearningData} />
+            </div>
+          </div>
+          <div className="text-right max-sm:text-center mt-3 text-lg tracking-tigher pt-4">
             <h2 className="text-3xl font-bold tracking-tighter border-b pb-2">
               Need a copy of my resume?
             </h2>
             <div className="flex flex-col lg:items-end items-center">
               <DottedButton className="mt-5">
                 <Link
-                  href="https://ethancreates.b-cdn.net/ethancreates-resume-website.pdf"
+                  href="https://ethancreates.b-cdn.net/ethancreates-resume-2025.pdf"
                   target="_blank"
                   download
                 >
@@ -169,6 +177,12 @@ const AboutMePage = () => {
 };
 
 export default AboutMePage;
+
+const LearningData = [
+  "Laravel",
+  "GoLang",
+  "Rust",
+]
 
 const SkillsData = [
   "HTML5",
@@ -260,25 +274,37 @@ const generalSkills = [
 
 const WorkExperienceData = [
   {
+    date: "August 2024 - Present",
+    position: "Full Stack WordPress Web Developer & UI/UX Designer",
+    company: "Piper Creative/AUM Growth Marketing",
+    location: "Pittsburgh, PA (Remote)",
+    description: {
+      first: `Collaborated closely with clients during onboarding calls to ensure their websites were tailored to their preferences and specific needs. Managed all aspects of website development, including hosting setup, DNS management, SEO, site design, copywriting, CDNs, and performance optimization.`,
+      second: `Rebuilt both Piper Creative and AUM Growth Marketing websites, focusing on user experience, branding consistency, and technical excellence. Leveraged proper WordPress development to consistently achieve Google PageSpeed Insight scores of 90-100. Despite challenges in marketing AUM Growth Marketing as planned, maintained a high standard of work that earned trust and satisfaction from clients and colleagues alike.`,
+      third: `Confident with my empathetic approach and clear communication during work, I strive to foster seamless coordination across teams while ensuring client satisfaction. My colleagues and leadership can vouch for my dedication, teamwork, and ability to deliver results even in challenging circumstances. Reach out to me for a list of some of my recently built WordPress websites!`,
+    },
+  },
+
+  {
     date: "February 2024 - August 2024",
     position: "Full-Stack Web Developer & UI/UX Designer",
     company: "Lauren Demi Design",
     location: "Boston, MA (Remote)",
     description: {
-      first: `The client's assistant first reached out to me on LinkedIn with a request to improve the mobile responsiveness of her Framer website. However, after just two days, she encountered a dispute with Framer and asked if I could rebuild the entire site using code instead. Confident in my skills, I agreed and took on the challenge.`,
-      second: `I developed her UI/UX designer portfolio using Next.js, React, Tailwind CSS, Framer Motion, Shadcn-UI, and the Resend API. We chose Next.js for its exceptional performance, developer-friendly experience (DX), and its ability to enhance SEO across all pages. The result is a modern, fast, and visually appealing portfolio that effectively showcases her design work.`,
-    third: ` `,
+      first: `From initial LinkedIn outreach to final delivery, maintained clear communication to ensure we aligned on every design decision. Transformed a client's Framer website into a custom-coded solution after she encountered platform limitations. `,
+      second: `Built her designer portfolio using Next.js and Tailwind CSS, adding smooth animations with Framer Motion. What started as mobile optimization became a complete platform migration - a challenge I gladly embraced to deliver better performance and SEO results.`,
+      third: ` `,
     },
   },
   {
     date: "November 2023 - January 2024",
     position: "Front End Web Developer",
     company: "Chinese Company (Under NDA)",
-    location: "Manila, Phlippines",
+    location: "Manila, Philippines",
     description: {
-      first: `I was referred by a friend to their team to help them design and build their Job Portal, this was a part-time position. I coordinated with them when working on the design via Figma first, and build the front-end soon after. I was able to do so, by utilizing one of the industry standard React framework, Next.js. Coupled with Tailwind CSS for styling, Framer Motion for animations, React-Hook-Table&Form, & lastly Shadcn-UI as an unstyled component library.`,
-      second: `Sadly the project got axed due to internal issues. Personally, I was devastated as I was highly motivated to finish the project. Recently I finished not only the front-end but the backend as well with my new found knowledge. I used Prisma as an ORM and Postgres for the database. You can view it at my projects section.`,
-      third: `Keep in mind this is just an MVP but everything should function, if you're interested to post a job, I can accept it via the Admin Dashboard to test the functionality, just reach out to hello@ethancreates.dev`,
+      first: `Collaborated with a cross-functional team to create a job portal MVP. Took ownership of the front-end development after co-designing the Figma prototypes, earning the team's trust to make technical decisions on component libraries and state management.`,
+      second: `When the project paused, I independently completed the full-stack version using Prisma and Postgres. Now it's a functional demo I'm proud to show off - feel free to test the admin features by reaching out!`,
+      third: `This experience taught me the value of adaptable planning - sometimes the best solutions emerge when initial plans change.`,
     },
   },
   {
@@ -287,9 +313,9 @@ const WorkExperienceData = [
     company: "No-BS Marketplace",
     location: "South Geelong, Victoria, Australia (Remote)",
     description: {
-      first: `Wrote SEO blog posts for No-BS Marketplace, an Australian-based digital marketing company that specializes in content writing, SEO, and domain authority. I was reached out by an old colleague for the position, while I was still diving into Web Development studies and courses.`,
-      second: `It was a great fit as the tasks weren't as demanding as my previous roles, and I didn't manage anyone as well, it was purely non-stop writing blog posts about various topics, word count ranges from 750 words to 2500 words per article, regularly wrote at least 10,000 words per week.`,
-      third: `Midway, I was able to take initiative of taking care of some of the companies WordPress sites, at this point my work load was very volatile, shifting from more writing to more web dev, and vice versa depending on what the team needed more. Soon after, I left the team to pursue programming as a full-time profession, which I also took some courses from Meta as they tests and certifications to ensure I have what it takes to be a dev.`,
+      first: `Started as an SEO writer producing 10k+ words weekly, but my curiosity for development opened new opportunities. Began suggesting WordPress improvements during content submissions, which led to handling site maintenance and customizations.`,
+      second: `Earned the team's trust to balance writing with technical tasks - whether optimizing a blog post or tweaking site CSS. This hybrid role let me grow both skills simultaneously while delivering exactly what the team needed most each week.`,
+      third: `The perfect bridge between my writing career and tech transition. Left on good terms to pursue development full-time, with grateful clients who still reach out for occasional projects.`,
     },
   },
   {
@@ -298,9 +324,9 @@ const WorkExperienceData = [
     company: "Northern Response International Ltd.",
     location: "Toronto, Ontario, Canada (Remote)",
     description: {
-      first: `I was tasked to manage the US, CA, and MX Amazon Accounts for Northern Response International Ltd., a Canadian-based company that specializes in direct response marketing. However, they felt the need to modernize their approach, thus they ventured out to Amazon's platform. Luckily, I was able to find their job listing at the time, and after an interview, we felt like a great match with my experience and eagerness to help out!`,
-      second: `My duties included overseeing the Amazon accounts for the US, Canada, and Mexico. This involved auditing and adjusting over 160 product listings (SKUs) to ensure they were optimized and competitive in regards to organic rankings and PPC campaigns.`,
-      third: `I also took on another role midway my tenure as a Junior Web Developer, tasked to maintain and handle some minor front-end and back-end tasks for their Shopify site, I was able to learn Ruby (programming language) and I was getting more and more fascinated with web development and programming.`,
+      first: `Proved my dual-value by boosting Amazon sales through listing optimizations while gradually taking on Shopify development tasks. Managers noticed my tech aptitude and encouraged me to learn Ruby for backend improvements.`,
+      second: `That first "Can you help with..." request led to maintaining core site features. Loved finding solutions that satisfied both marketing goals and technical requirements.`,
+      third: `Left having modernized their approach to data tracking - a win for both the marketing and dev teams.`,
     },
   },
   {
@@ -309,9 +335,10 @@ const WorkExperienceData = [
     company: "Ovente",
     location: "Vernon, CA, USA (Remote)",
     description: {
-      first: `Started my career remotely, I was tasked to manage the top 50 SKUs of two categories in our product lineup. I was also in-charge of two team members to help me cater to all SKUs and improve organic rankings through Listing Optimization, Keyword Research and proper planning for possible promotions.`,
-      second: `Speaking of promotions, I was also managing the PPC for these SKUs and improve the overall ranking of the product by targeting well thought-out keywords.`,
-      third: `I was able to consistently keep more than half of the SKUs within page 1 and 2 of their main keywords. During my tenure, I made sure to not stop learning and upskilling, learning more about SEO and slowly learning more in-depth about Web Development and Digital Marketing as a whole.`,
+      first: `Cut my teeth managing top-selling products on Amazon while mentoring two team members. Found creative ways to apply my growing coding knowledge to automate reports and track keyword rankings.`,
+      second: `The thrill of seeing our products rank #1 never got old! But I knew my future was in building things, not just selling them.`,
+      third: `Grateful for leaders who supported my learning journey - even let me prototype simple tools that boosted our workflow efficiency.`,
     },
   },
-];
+]
+
