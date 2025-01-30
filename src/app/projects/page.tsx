@@ -33,13 +33,14 @@ const ProjectsPage = () => {
       </div>
 
       <h1 className="text-7xl font-bold tracking-tighter">Projects</h1>
+      <p className="text-gray-600 ml-1 mt-2">WordPress sites to be added soon!</p>
 
       {/* Section */}
       <section className="flex flex-col items-center">
         <Carousel className="w-full h-full max-w-6xl  my-20 ">
           <CarouselContent>
             <CarouselItem>
-              <Card className="bg-slate-800  border-2 px-8 py-5 md:h-[600px]">
+              <Card className="bg-slate-800  border-1 px-8 py-5 md:h-[600px]">
                 <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
                   <div className="flex justify-between border-b-2 pb-3">
                     <h2>Article Pal - SaaS Personal Project</h2>
