@@ -61,7 +61,7 @@ const ProjectsPage = () => {
                   {/* Text */}
                   <div className="flex flex-col space-y-5">
                     <p className="text-lg text-white">
-        Built with WordPress and Elementor Pro, Piper Creative is a video production service agency that specializes in creating content for businesses. The website is designed to showcase the agency's services, portfolio, and team members. The website is also optimized for SEO and performance.
+        Built with WordPress and Elementor Pro, Piper Creative is a video production service agency that specializes in creating content for businesses. The website is designed to showcase the agency&apos;s services, portfolio, and team members. The website is also optimized for SEO and performance.
                     </p>
                     <p className="text-lg text-white">
 PageSpeed - 98 Performance
@@ -101,7 +101,7 @@ PageSpeed - 98 Performance
                   {/* Text */}
                   <div className="flex flex-col space-y-5">
                     <p className="text-lg text-white">
-      Built with WordPress and Elementor Pro, AUM Growth Marketing is a digital marketing agency that specializes in helping businesses grow their online presence. The website is designed to showcase the agency's services, portfolio, and team members. The website is also optimized for SEO and performance.
+      Built with WordPress and Elementor Pro, AUM Growth Marketing is a digital marketing agency that specializes in helping businesses grow their online presence. The website is designed to showcase the agency&apos;s services, portfolio, and team members. The website is also optimized for SEO and performance.
                     </p>
                     <p className="text-lg text-white">
 PageSpeed - 99 Performance
