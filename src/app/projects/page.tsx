@@ -3,6 +3,8 @@ import Link from "next/link";
 import LaurenPortfolioImg from "../../../public/lauren-portfolio-img.jpeg";
 import HLACareersImg from "../../../public/hla-careers.png";
 import ArticlePalImg from "../../../public/articlepal.jpeg";
+import PiperImg from "../../../public/Piper-screenshot.png";
+import AUMImg from "../../../public/AUM-screenshot.png";
 
 import {
   Carousel,
@@ -39,6 +41,86 @@ const ProjectsPage = () => {
       <section className="flex flex-col items-center">
         <Carousel className="w-full h-full max-w-6xl  my-20 ">
           <CarouselContent>
+          <CarouselItem>
+              <Card className="bg-slate-800  border-1 px-8 py-5 md:h-[600px]">
+                <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
+                  <div className="flex justify-between border-b-2 pb-3">
+                    <h2>Piper Creative</h2>
+                    <DottedButton className="text-lg">
+                      <Link
+                        href="https://pipercreative.co"
+                        target="_blank"
+                        className=""
+                      >
+                        Live Link
+                      </Link>
+                    </DottedButton>
+                  </div>
+                </CardHeader>
+                <CardContent className="flex md:flex-row flex-col items-center mt-5 space-x-10">
+                  {/* Text */}
+                  <div className="flex flex-col space-y-5">
+                    <p className="text-lg text-white">
+        Built with WordPress and Elementor Pro, Piper Creative is a video production service agency that specializes in creating content for businesses. The website is designed to showcase the agency's services, portfolio, and team members. The website is also optimized for SEO and performance.
+                    </p>
+                    <p className="text-lg text-white">
+PageSpeed - 98 Performance
+                    </p>
+                    <a href="https://pagespeed.web.dev/analysis/https-pipercreative-co/p9gmqtntww?form_factor=desktop" className="text-lg text-blue-400 hover:pointer hover:underline">
+                    https://pagespeed.web.dev/analysis/https-pipercreative-co/p9gmqtntww?form_factor=desktop
+                    </a>
+                  </div>
+                  {/* Image */}
+                  <div>
+                    <Image
+                      src={PiperImg}
+                      alt="Piper Creative's Hero Section"
+                      className="rounded-2xl mt-5 md:mt-0"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+            </CarouselItem>
+          <CarouselItem>
+              <Card className="bg-slate-800  border-1 px-8 py-5 md:h-[600px]">
+                <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
+                  <div className="flex justify-between border-b-2 pb-3">
+                    <h2>AUM Growth Marketing</h2>
+                    <DottedButton className="text-lg">
+                      <Link
+                        href="https://aumgrowthmarketing.com"
+                        target="_blank"
+                        className=""
+                      >
+                        Live Link
+                      </Link>
+                    </DottedButton>
+                  </div>
+                </CardHeader>
+                <CardContent className="flex md:flex-row flex-col items-center mt-5 space-x-10">
+                  {/* Text */}
+                  <div className="flex flex-col space-y-5">
+                    <p className="text-lg text-white">
+      Built with WordPress and Elementor Pro, AUM Growth Marketing is a digital marketing agency that specializes in helping businesses grow their online presence. The website is designed to showcase the agency's services, portfolio, and team members. The website is also optimized for SEO and performance.
+                    </p>
+                    <p className="text-lg text-white">
+PageSpeed - 99 Performance
+                    </p>
+                    <a href="https://pagespeed.web.dev/analysis/https-aumgrowthmarketing-com/mi370p4b34?form_factor=desktop" className="text-lg text-blue-400 hover:pointer hover:underline">
+                    https://pagespeed.web.dev/analysis/https-aumgrowthmarketing-com/mi370p4b34?form_factor=desktop
+                    </a>
+                  </div>
+                  {/* Image */}
+                  <div>
+                    <Image
+                      src={AUMImg}
+                      alt="AUM's Hero Section"
+                      className="rounded-2xl mt-5 md:mt-0"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+            </CarouselItem>
             <CarouselItem>
               <Card className="bg-slate-800  border-1 px-8 py-5 md:h-[600px]">
                 <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
@@ -91,7 +173,7 @@ const ProjectsPage = () => {
               </Card>
             </CarouselItem>
             <CarouselItem>
-              <Card className="bg-slate-800 border-b md:h-[600px] border-2 px-8 py-5">
+              <Card className="bg-slate-800 border-b md:h-[600px] border-1 px-8 py-5">
                 <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
                   <div className="flex justify-between border-b-2 pb-3">
                     <h2>Lauren Demi&apos;s UI/UX Designer - Portfolio</h2>
@@ -139,7 +221,7 @@ const ProjectsPage = () => {
               </Card>
             </CarouselItem>
             <CarouselItem>
-              <Card className="bg-slate-800  border-2 px-8 py-5 md:h-[600px]">
+              <Card className="bg-slate-800  border-1 px-8 py-5 md:h-[600px]">
                 <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
                   <div className="flex justify-between border-b-2 pb-3">
                     <h2>Job Portal</h2>
