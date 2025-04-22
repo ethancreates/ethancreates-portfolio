@@ -274,7 +274,7 @@ const generalSkills = [
 
 const WorkExperienceData = [
   {
-    date: "August 2024 - Present",
+    date: "August 2024 - March 2025",
     position: "Full Stack WordPress Web Developer & UI/UX Designer",
     company: "Piper Creative/AUM Growth Marketing",
     location: "Pittsburgh, PA (Remote)",
