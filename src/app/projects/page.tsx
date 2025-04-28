@@ -176,7 +176,7 @@ PageSpeed - 99 Performance
               <Card className="bg-slate-800 border-b md:h-[600px] border-1 px-8 py-5">
                 <CardHeader className="text-white tracking-tighter text-5xl flex flex-col">
                   <div className="flex justify-between border-b-2 pb-3">
-                    <h2>Lauren Demi&apos;s UI/UX Designer - Portfolio</h2>
+                    <h2>Lauren Demi&apos;s UI/UX Designer - Portfolio (Standby)</h2>
                     <DottedButton className="text-lg">
                       <Link
                         href="https://laurendemidesign-portfolio.vercel.app"
