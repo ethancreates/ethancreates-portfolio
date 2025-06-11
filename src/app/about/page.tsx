@@ -281,19 +281,19 @@ const WorkExperienceData = [
         <>
           <ul className="list-disc list-inside space-y-3 text-slate-300 mt-3">
             <li className="list-disc">
-              <strong className="text-[20px] text-white">Client-Centric Onboarding & Collaboration :</strong><br></br> Led onboarding calls to deeply understand client needs, preferences, and business goals, ensuring every website was uniquely tailored for maximum impact. Established strong, trust-based relationships with clients through clear, empathetic communication and proactive project updates.
+              <strong className="text-[20px] text-white">Client-Centric Onboarding & Collaboration:</strong><br></br> Led onboarding calls to deeply understand client needs, preferences, and business goals, ensuring every website was uniquely tailored for maximum impact. Established strong, trust-based relationships with clients through clear, empathetic communication and proactive project updates.
             </li>
             <li className="list-disc">
-              <strong className="text-[20px] text-white">Full-Spectrum Website Development :</strong><br></br> Managed end-to-end website creation, including hosting setup, DNS management, SEO optimization, site design, copywriting, CDN integration, and performance tuning. Specialized in WordPress development, consistently achieving Google PageSpeed Insight scores of 90–100 for all delivered projects.
+              <strong className="text-[20px] text-white">Full-Spectrum Website Development:</strong><br></br> Managed end-to-end website creation, including hosting setup, DNS management, SEO optimization, site design, copywriting, CDN integration, and performance tuning. Specialized in WordPress development, consistently achieving Google PageSpeed Insight scores of 90–100 for all delivered projects.
             </li>
             <li className="list-disc">
-              <strong className="text-[20px] text-white">Strategic Website Rebuilds :</strong> <br></br> Rebuilt the Piper Creative and AUM Growth Marketing websites with a focus on user experience, branding consistency, and technical excellence. Delivered visually compelling, high-performing sites that reinforced brand identity and improved user engagement.
+              <strong className="text-[20px] text-white">Strategic Website Rebuilds:</strong> <br></br> Rebuilt the Piper Creative and AUM Growth Marketing websites with a focus on user experience, branding consistency, and technical excellence. Delivered visually compelling, high-performing sites that reinforced brand identity and improved user engagement.
             </li>
             <li className="list-disc">
-              <strong className="text-[20px] text-white">Performance & Quality Assurance :</strong><br></br> Prioritized site speed, accessibility, and SEO best practices to drive measurable improvements in website performance and search rankings. Maintained a high standard of work, consistently earning positive feedback and trust from clients and colleagues.
+              <strong className="text-[20px] text-white">Performance & Quality Assurance:</strong><br></br> Prioritized site speed, accessibility, and SEO best practices to drive measurable improvements in website performance and search rankings. Maintained a high standard of work, consistently earning positive feedback and trust from clients and colleagues.
             </li>
             <li className="list-disc">
-              <strong className="text-[20px] text-white">Teamwork & Leadership :</strong><br></br> Fostered seamless coordination across cross-functional teams, ensuring projects were delivered on time and to specification—even in high-pressure situations. Recognized for dedication, reliability, and a results-driven mindset by both peers and leadership.
+              <strong className="text-[20px] text-white">Teamwork & Leadership:</strong><br></br> Fostered seamless coordination across cross-functional teams, ensuring projects were delivered on time and to specification—even in high-pressure situations. Recognized for dedication, reliability, and a results-driven mindset by both peers and leadership.
             </li>
           </ul>
         </>
@@ -394,13 +394,13 @@ description: {
         <>
           <ul className="list-disc list-inside space-y-3 text-slate-300 mt-3">
             <li className="list-disc">
-              <strong className="text-[20px] text-white">Dual-Role Performance & Sales Optimization:</strong> Boosted Amazon sales by auditing and optimizing 160+ product listings across US, Canada, and Mexico accounts, improving organic rankings and PPC campaign effectiveness.
+              <strong className="text-[20px] text-white">Dual-Role Performance & Sales Optimization:</strong><br></br> Boosted Amazon sales by auditing and optimizing 160+ product listings across US, Canada, and Mexico accounts, improving organic rankings and PPC campaign effectiveness.
             </li>
             <li className="list-disc">
-              <strong>Progressive Shopify Development & Technical Growth:</strong> Took initiative to support Shopify site maintenance and development, learning Ruby to enhance backend features and deliver solutions balancing marketing goals with technical requirements.
+              <strong className="text-[20px] text-white">Progressive Shopify Development & Technical Growth:</strong><br></br> Took initiative to support Shopify site maintenance and development, learning Ruby to enhance backend features and deliver solutions balancing marketing goals with technical requirements.
             </li>
             <li className="list-disc">
-              <strong className="text-[20px] text-white">Cross-Functional Impact & Modernization:</strong> Modernized data tracking approaches, fostering improved collaboration between marketing and development teams and leaving a lasting positive impact on business processes.
+              <strong className="text-[20px] text-white">Cross-Functional Impact & Modernization:</strong><br></br> Modernized data tracking approaches, fostering improved collaboration between marketing and development teams and leaving a lasting positive impact on business processes.
             </li>
           </ul>
 
@@ -419,16 +419,16 @@ description: {
         <>
           <ul className="list-disc list-inside space-y-3 text-slate-300 mt-3">
             <li className="list-disc">
-              <strong className="text-[20px] text-white">Amazon Product Management & Team Mentorship:</strong> Managed top 50 SKUs across two product categories, mentoring two team members to improve organic rankings through listing optimization, keyword research, and promotion planning.
+              <strong className="text-[20px] text-white">Amazon Product Management & Team Mentorship:</strong><br></br> Managed top 50 SKUs across two product categories, mentoring two team members to improve organic rankings through listing optimization, keyword research, and promotion planning.
             </li>
             <li className="list-disc">
-              <strong className="text-[20px] text-white">PPC Campaign Oversight & Performance:</strong> Directed PPC campaigns targeting strategic keywords, consistently maintaining over half the SKUs ranked on page 1 or 2 for main keywords.
+              <strong className="text-[20px] text-white">PPC Campaign Oversight & Performance:</strong><br></br> Directed PPC campaigns targeting strategic keywords, consistently maintaining over half the SKUs ranked on page 1 or 2 for main keywords.
             </li>
             <li className="list-disc">
-              <strong className="text-[20px] text-white">Automation & Workflow Efficiency:</strong> Leveraged growing coding skills to automate reports and track keyword rankings, prototyping simple tools that significantly boosted workflow efficiency.
+              <strong className="text-[20px] text-white">Automation & Workflow Efficiency:</strong><br></br> Leveraged growing coding skills to automate reports and track keyword rankings, prototyping simple tools that significantly boosted workflow efficiency.
             </li>
             <li className="list-disc">
-              <strong className="text-[20px] text-white">Passion for Building Solutions:</strong> Embraced a future focused on creating tools and solutions beyond selling, continuously upskilling in SEO, web development, and digital marketing with strong leadership support.
+              <strong className="text-[20px] text-white">Passion for Building Solutions:</strong><br></br> Embraced a future focused on creating tools and solutions beyond selling, continuously upskilling in SEO, web development, and digital marketing with strong leadership support.
             </li>
           </ul>
 
