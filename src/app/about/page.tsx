@@ -272,7 +272,26 @@ const generalSkills = [
 
 const WorkExperienceData = [
   {
-    date: "August 2024 -  2025",
+    date: "February 2025 -  March 2025",
+    position: "WordPress Web Developer",
+    company: "Better Image Solutions",
+    location: "Canada (Remote)",
+    description: {
+      first: (
+        <>
+          <ul className="list-disc list-inside space-y-3 text-slate-300 mt-3">
+            <li className="list-disc">
+              <strong className="text-[20px] text-white">Third-Party CMS-to-WordPress Transitions:</strong><br></br> Migration of client websites from a legacy third-party white-label CMS to WordPress, utilizing Elementor for efficient page building and design fidelity. Consistently completed first-version (v1) site conversions within a single day per project.
+            </li>
+          </ul>
+        </>
+      ),
+    }
+  },
+    
+
+  {
+    date: "August 2024 -  February 2025",
     position: "Full Stack WordPress Web Developer & UI/UX Designer",
     company: "Piper Creative/AUM Growth Marketing",
     location: "Pittsburgh, PA (Remote)",
